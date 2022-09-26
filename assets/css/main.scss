@@ -32,7 +32,7 @@ a{
     font-weight: 500;
     &:hover{
         color: #000;
-        font-weight: bolder;
+        font-weight: bold;
     }
 }
 p{
@@ -79,7 +79,6 @@ i{
 .viewall{
     color: rgba(0, 0, 0, 0.8);
     font-size: 1rem;
-    text-transform: capitalize;
     cursor: pointer;
     text-transform: uppercase;
 }
