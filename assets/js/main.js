@@ -18,12 +18,21 @@ $(document).ready(function () {
         $(".sidebar").removeClass('openside');
         $("#act-box").hide();
     });
-    $(document).ready(function(){
-        $(".btnmenu").click(function(){
-            $(".sidebar").toggleClass('openside');
-        });
+    $(".btnmenu").click(function(){
+        $(".sidebar").toggleClass('openside');
     });
-
+    $(".option").click(function(){
+        $("#opt-box").toggle();
+    });
+    $("#option1").click(function(){
+        $("#opt-box1").toggle();
+    });
+    $("#option2").click(function(){
+        $("#opt-box2").toggle();
+    });
+    $("#share-course").click(function(){
+        $("#share-box").css("display","flex");
+    });
     $('#recommended-slide').owlCarousel({
         loop:true,
         margin:10,
@@ -75,6 +84,25 @@ $(document).ready(function () {
             },
             1000:{
                 items:3
+            }
+        }
+    })
+    $('#instructor-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        lazyLoad:true,
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
             }
         }
     })
