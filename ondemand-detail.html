@@ -234,19 +234,27 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
                         <div class="social-stat">
                             <div class="stat">
-                                <img src="/assets/images/icon/like.svg" alt="">
+                                <img src="/assets/images/icon/like.svg"  alt="">
+                                <!-- <img src="/assets/images/icon/like-done.svg"  alt=""> -->
                                 <span>15</span>
                             </div>
-                            <div class="stat">
-                                <img src="/assets/images/icon/dislike.svg" alt="">
-                                <span>0</span>
-                            </div>
-                            <div class="stat">
-                                <img src="/assets/images/icon/share.svg" alt="">
+                            <div class="stat share">
+                                <img src="/assets/images/icon/share.svg" id="share-course" alt="">
                                 <span>5</span>
+                                <div class="share-drop" id="share-box">
+                                    <a href="" class="share-drop-link"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="" class="share-drop-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="" class="share-drop-link"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="" class="share-drop-link"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="" class="share-drop-link"><i class="fas fa-envelope"></i></a>
+                                </div>
                             </div>
                             <div class="stat option">
-                                <i class="fas fa-ellipsis-v"></i>
+                                <i class="fas fa-ellipsis-v" id="option1"></i>
+                                <div class="option-box" id="opt-box1">
+                                    <p id="follow">Bookmark</p>
+                                    <p>Report/Spam</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -263,11 +271,23 @@
                     <div class="col-lg-3 col-md-12 col-sm-12 mt-3">
                         <div class="about-instructor">
                             <h6>Course By</h6>
-                            <div class="content">
-                                <div class="image">
-                                    <img src="/assets/images/profile-pic.png" alt="">
-                                </div>    
-                                <a href="" class="name">Aditya Tyagi</a>
+                            <div class="owl-carousel owl-theme" id="instructor-slide">
+                                <div class="item ms-2 me-2">
+                                    <div class="content mb-3">
+                                        <div class="image">
+                                            <img src="/assets/images/profile-pic.png" alt="">
+                                        </div>    
+                                        <a href="" class="name">Aditya Tyagi</a>
+                                    </div>
+                                </div>
+                                <div class="item ms-2 me-2">
+                                    <div class="content mb-3">
+                                        <div class="image">
+                                            <img src="/assets/images/profile-pic.jpg" alt="">
+                                        </div>    
+                                        <a href="" class="name">Utkarsh Sharma</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -284,7 +304,7 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
                             <a href="" class="img-wrapper">
                                 <img src="assets/images/newsletter-video2.png" class="card-img-top owl-lazy" alt="...">
@@ -292,7 +312,14 @@
                             <div class="card-body">
                                 <div class="title">
                                   <p class="card-text">Easy Yoga for Complete Beginners </p>
-                                  <i class="fas fa-ellipsis-v"></i>
+                                  <div class="option">
+                                    <i class="fas fa-ellipsis-v" id="option2"></i>
+                                    <div class="option-box" id="opt-box2">
+                                      <p>Share</p>
+                                      <p>Bookmark</p>
+                                      <p>Report/Spam</p>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="duration">
                                   <span>2 Hrs</span>
@@ -300,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
                             <a href="" class="img-wrapper">
                                 <img src="assets/images/april-newsletter-03.png" class="card-img-top owl-lazy" alt="...">
@@ -316,7 +343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
                             <a href="" class="img-wrapper">
                                 <img src="assets/images/april-newsletter-04.png" class="card-img-top owl-lazy" alt="...">
@@ -333,9 +360,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row d-flex text-center">
-                    <div class="col"><a href="">View More</a></div>
-                </div> -->
             </div>
         </section>
         <section class="courses same-teacher-classes mb-5">
@@ -348,7 +372,7 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
                             <a href="" class="img-wrapper">
                                 <img src="assets/images/newsletter-video2.png" class="card-img-top owl-lazy" alt="...">
@@ -364,7 +388,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
                             <a href="" class="img-wrapper">
                                 <img src="assets/images/april-newsletter-03.png" class="card-img-top owl-lazy" alt="...">
@@ -380,7 +404,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
                             <a href="" class="img-wrapper">
                                 <img src="assets/images/april-newsletter-04.png" class="card-img-top owl-lazy" alt="...">
@@ -397,9 +421,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row d-flex text-center">
-                    <div class="col"><a href="">View More</a></div>
-                </div> -->
             </div>
         </section>
         <section class="reviews">
@@ -415,7 +436,17 @@
                                 <div class="name">
                                     <a href="">RK Jangra</a>
                                 </div>  
-                                <div class="option"><i class="fas fa-ellipsis-v"></i></div>
+                                <div class="rating">
+                                    <div class="star">
+                                        <span>1.0</span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fas fa-star-half-alt"></span>
+                                        <span class="far fa-star"></span>
+                                    </div>
+                                    <span class="time">20 min ago</span>
+                                </div>
                             </div>
                             <p class="message">I had the most nostalgic samosa. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took? I had the most nostalgic samosa. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
                         </div>
@@ -431,7 +462,17 @@
                                 <div class="name">
                                     <a href="">Tony Stark</a>
                                 </div> 
-                                <div class="option"><i class="fas fa-ellipsis-v"></i></div>
+                                <div class="rating">
+                                    <div class="star">
+                                        <span>1.0</span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fas fa-star-half-alt"></span>
+                                        <span class="far fa-star"></span>
+                                    </div>
+                                    <span class="time">20 min ago</span>
+                                </div>
                             </div>
                             <p class="message">I had the most nostalgic samosa. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took? I had the most nostalgic samosa. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
                         </div>
