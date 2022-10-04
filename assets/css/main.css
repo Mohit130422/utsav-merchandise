@@ -1240,10 +1240,10 @@ main .Trainer-Profile .nav .nav-scroll ul .active .line {
     display: none;
   }
 }
-main .User-content {
+main .teacher-content {
   padding: 25px;
 }
-main .User-content .book-slot .btn {
+main .teacher-content .book-slot .btn {
   width: 100%;
   background-color: #ffffff;
   color: #FF4E00;
@@ -1257,85 +1257,58 @@ main .User-content .book-slot .btn {
   font-weight: 600;
   box-shadow: 0 1px 2px rgba(255, 78, 0, 0.5);
 }
-main .User-content .discussion .card, main .User-content .inspiration .card {
+main .teacher-content .discussion .card, main .teacher-content .inspiration .card {
   max-height: unset;
 }
-main .User-content .discussion .card .post .post-content, main .User-content .inspiration .card .post .post-content {
+main .teacher-content .discussion .card .post .post-content, main .teacher-content .inspiration .card .post .post-content {
   padding: 16px;
-  border-bottom: 1px solid #BBBBBB;
 }
-main .User-content .discussion .card .post .post-content .option-box, main .User-content .inspiration .card .post .post-content .option-box {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  width: 238px;
-  height: auto;
-  right: 10px;
-  top: 15px;
-  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2784313725);
-  border-radius: 5px;
-}
-main .User-content .discussion .card .post .post-content .option-box p, main .User-content .inspiration .card .post .post-content .option-box p {
-  padding: 8px 15px;
-  margin: 0px;
-  cursor: pointer;
-}
-main .User-content .discussion .card .post .post-content .option-box p:hover, main .User-content .inspiration .card .post .post-content .option-box p:hover {
-  background-color: #ffd4fb;
-  overflow: hidden;
-}
-main .User-content .discussion .card .post .post-content .user-info, main .User-content .inspiration .card .post .post-content .user-info {
+main .teacher-content .discussion .card .post .post-content .user-info, main .teacher-content .inspiration .card .post .post-content .user-info {
   display: grid;
   grid-template-columns: 50px auto;
   margin-bottom: 16px;
 }
-main .User-content .discussion .card .post .post-content .user-info .img, main .User-content .inspiration .card .post .post-content .user-info .img {
+main .teacher-content .discussion .card .post .post-content .user-info .img, main .teacher-content .inspiration .card .post .post-content .user-info .img {
   width: 50px;
   height: 50px;
   border-radius: 50px;
   overflow: hidden;
   margin: auto 0;
 }
-main .User-content .discussion .card .post .post-content .user-info .img img, main .User-content .inspiration .card .post .post-content .user-info .img img {
+main .teacher-content .discussion .card .post .post-content .user-info .img img, main .teacher-content .inspiration .card .post .post-content .user-info .img img {
   width: 50px;
 }
-main .User-content .discussion .card .post .post-content .user-info .post-info, main .User-content .inspiration .card .post .post-content .user-info .post-info {
+main .teacher-content .discussion .card .post .post-content .user-info .post-info, main .teacher-content .inspiration .card .post .post-content .user-info .post-info {
   margin: auto 0 auto 16px;
 }
-main .User-content .discussion .card .post .post-content .user-info .post-info .post-info-detail, main .User-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail {
+main .teacher-content .discussion .card .post .post-content .user-info .post-info .post-info-detail, main .teacher-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail {
   font-size: 14px;
   color: #000;
 }
-main .User-content .discussion .card .post .post-content .user-info .post-info .post-info-detail span, main .User-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail span {
+main .teacher-content .discussion .card .post .post-content .user-info .post-info .post-info-detail span, main .teacher-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail span {
   margin-right: 8px;
 }
-main .User-content .discussion .card .post .post-content .user-info .post-info .post-info-detail .name, main .User-content .discussion .card .post .post-content .user-info .post-info .post-info-detail .post_type, main .User-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail .name, main .User-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail .post_type {
+main .teacher-content .discussion .card .post .post-content .user-info .post-info .post-info-detail .name, main .teacher-content .discussion .card .post .post-content .user-info .post-info .post-info-detail .post_type, main .teacher-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail .name, main .teacher-content .inspiration .card .post .post-content .user-info .post-info .post-info-detail .post_type {
   font-weight: 700;
   color: #000;
   opacity: 1;
 }
-main .User-content .discussion .card .post .post-content .user-info .post-info .time, main .User-content .inspiration .card .post .post-content .user-info .post-info .time {
+main .teacher-content .discussion .card .post .post-content .user-info .post-info .time, main .teacher-content .inspiration .card .post .post-content .user-info .post-info .time {
   font-size: 14px;
   font-weight: 500;
   color: #000;
   opacity: 0.5;
 }
-main .User-content .discussion .card .post .post-content .user-info .option, main .User-content .inspiration .card .post .post-content .user-info .option {
-  cursor: pointer;
-}
-main .User-content .discussion .card .post .post-content .user-info .option img, main .User-content .inspiration .card .post .post-content .user-info .option img {
-  width: 30px;
-}
-main .User-content .discussion .card .post .post-content .post-content-box, main .User-content .inspiration .card .post .post-content .post-content-box {
+main .teacher-content .discussion .card .post .post-content .post-content-box, main .teacher-content .inspiration .card .post .post-content .post-content-box {
   font-size: 15px;
 }
-main .User-content .discussion .card .post .post-content .post-content-box span, main .User-content .inspiration .card .post .post-content .post-content-box span {
+main .teacher-content .discussion .card .post .post-content .post-content-box span, main .teacher-content .inspiration .card .post .post-content .post-content-box span {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .media, main .User-content .inspiration .card .post .post-content .post-content-box .media {
+main .teacher-content .discussion .card .post .post-content .post-content-box .media, main .teacher-content .inspiration .card .post .post-content .post-content-box .media {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1346,7 +1319,7 @@ main .User-content .discussion .card .post .post-content .post-content-box .medi
   width: 100%;
   height: 200px;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .media img, main .User-content .inspiration .card .post .post-content .post-content-box .media img {
+main .teacher-content .discussion .card .post .post-content .post-content-box .media img, main .teacher-content .inspiration .card .post .post-content .post-content-box .media img {
   max-width: 100%;
   height: 200px;
   -o-object-fit: cover;
@@ -1354,7 +1327,7 @@ main .User-content .discussion .card .post .post-content .post-content-box .medi
   -o-object-position: center top;
      object-position: center top;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .video, main .User-content .inspiration .card .post .post-content .post-content-box .video {
+main .teacher-content .discussion .card .post .post-content .post-content-box .video, main .teacher-content .inspiration .card .post .post-content .post-content-box .video {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1365,7 +1338,7 @@ main .User-content .discussion .card .post .post-content .post-content-box .vide
   width: 100%;
   height: 200px;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .video video, main .User-content .inspiration .card .post .post-content .post-content-box .video video {
+main .teacher-content .discussion .card .post .post-content .post-content-box .video video, main .teacher-content .inspiration .card .post .post-content .post-content-box .video video {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
@@ -1373,11 +1346,11 @@ main .User-content .discussion .card .post .post-content .post-content-box .vide
   -o-object-position: center top;
      object-position: center top;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .video iframe, main .User-content .inspiration .card .post .post-content .post-content-box .video iframe {
+main .teacher-content .discussion .card .post .post-content .post-content-box .video iframe, main .teacher-content .inspiration .card .post .post-content .post-content-box .video iframe {
   width: 320px;
   height: 160px;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .video .masterPlay, main .User-content .inspiration .card .post .post-content .post-content-box .video .masterPlay {
+main .teacher-content .discussion .card .post .post-content .post-content-box .video .masterPlay, main .teacher-content .inspiration .card .post .post-content .post-content-box .video .masterPlay {
   position: absolute;
   z-index: 10;
   color: #f7f4f4;
@@ -1388,7 +1361,7 @@ main .User-content .discussion .card .post .post-content .post-content-box .vide
   right: 0;
   bottom: 0;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .audio, main .User-content .inspiration .card .post .post-content .post-content-box .audio {
+main .teacher-content .discussion .card .post .post-content .post-content-box .audio, main .teacher-content .inspiration .card .post .post-content .post-content-box .audio {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1399,7 +1372,7 @@ main .User-content .discussion .card .post .post-content .post-content-box .audi
   width: 100%;
   height: 200px;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .audio .masterPlay, main .User-content .inspiration .card .post .post-content .post-content-box .audio .masterPlay {
+main .teacher-content .discussion .card .post .post-content .post-content-box .audio .masterPlay, main .teacher-content .inspiration .card .post .post-content .post-content-box .audio .masterPlay {
   position: absolute;
   z-index: 10;
   color: #f7f4f4;
@@ -1410,53 +1383,53 @@ main .User-content .discussion .card .post .post-content .post-content-box .audi
   right: 0;
   bottom: 0;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .question-media, main .User-content .inspiration .card .post .post-content .post-content-box .question-media {
+main .teacher-content .discussion .card .post .post-content .post-content-box .question-media, main .teacher-content .inspiration .card .post .post-content .post-content-box .question-media {
   margin-top: 16px;
 }
-main .User-content .discussion .card .post .post-content .post-content-box .question-media img, main .User-content .inspiration .card .post .post-content .post-content-box .question-media img {
+main .teacher-content .discussion .card .post .post-content .post-content-box .question-media img, main .teacher-content .inspiration .card .post .post-content .post-content-box .question-media img {
   max-width: 100%;
   border-radius: 12px;
 }
-main .User-content .discussion .card .post .post-option, main .User-content .inspiration .card .post .post-option {
+main .teacher-content .discussion .card .post .post-option, main .teacher-content .inspiration .card .post .post-option {
   padding: 16px;
   display: grid;
   grid-template-columns: auto 80px;
 }
-main .User-content .discussion .card .post .post-option .follow, main .User-content .inspiration .card .post .post-option .follow {
+main .teacher-content .discussion .card .post .post-option .follow, main .teacher-content .inspiration .card .post .post-option .follow {
   text-align: right;
 }
-main .User-content .discussion .card .post .post-option .follow .solid-action-btn, main .User-content .inspiration .card .post .post-option .follow .solid-action-btn {
+main .teacher-content .discussion .card .post .post-option .follow .solid-action-btn, main .teacher-content .inspiration .card .post .post-option .follow .solid-action-btn {
   padding: 5px 10px;
   font-size: 12px;
 }
-main .User-content .discussion .card .post .post-option .follow .solid-action-btn:hover, main .User-content .inspiration .card .post .post-option .follow .solid-action-btn:hover {
+main .teacher-content .discussion .card .post .post-option .follow .solid-action-btn:hover, main .teacher-content .inspiration .card .post .post-option .follow .solid-action-btn:hover {
   color: #fff;
 }
-main .User-content .discussion .card .post .inspire, main .User-content .inspiration .card .post .inspire {
+main .teacher-content .discussion .card .post .inspire, main .teacher-content .inspiration .card .post .inspire {
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
 }
-main .User-content .discussion .card .post .inspire .like, main .User-content .discussion .card .post .inspire .comment, main .User-content .discussion .card .post .inspire .share, main .User-content .inspiration .card .post .inspire .like, main .User-content .inspiration .card .post .inspire .comment, main .User-content .inspiration .card .post .inspire .share {
+main .teacher-content .discussion .card .post .inspire .like, main .teacher-content .discussion .card .post .inspire .comment, main .teacher-content .discussion .card .post .inspire .share, main .teacher-content .inspiration .card .post .inspire .like, main .teacher-content .inspiration .card .post .inspire .comment, main .teacher-content .inspiration .card .post .inspire .share {
   margin: auto;
   cursor: pointer;
 }
-main .User-content .discussion .card .post .inspire .like .icon, main .User-content .discussion .card .post .inspire .comment .icon, main .User-content .discussion .card .post .inspire .share .icon, main .User-content .inspiration .card .post .inspire .like .icon, main .User-content .inspiration .card .post .inspire .comment .icon, main .User-content .inspiration .card .post .inspire .share .icon {
+main .teacher-content .discussion .card .post .inspire .like .icon, main .teacher-content .discussion .card .post .inspire .comment .icon, main .teacher-content .discussion .card .post .inspire .share .icon, main .teacher-content .inspiration .card .post .inspire .like .icon, main .teacher-content .inspiration .card .post .inspire .comment .icon, main .teacher-content .inspiration .card .post .inspire .share .icon {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-main .User-content .discussion .card .post .inspire .like .icon img, main .User-content .discussion .card .post .inspire .comment .icon img, main .User-content .discussion .card .post .inspire .share .icon img, main .User-content .inspiration .card .post .inspire .like .icon img, main .User-content .inspiration .card .post .inspire .comment .icon img, main .User-content .inspiration .card .post .inspire .share .icon img {
+main .teacher-content .discussion .card .post .inspire .like .icon img, main .teacher-content .discussion .card .post .inspire .comment .icon img, main .teacher-content .discussion .card .post .inspire .share .icon img, main .teacher-content .inspiration .card .post .inspire .like .icon img, main .teacher-content .inspiration .card .post .inspire .comment .icon img, main .teacher-content .inspiration .card .post .inspire .share .icon img {
   width: 16px;
 }
-main .User-content .discussion .card .post .inspire .like .stat, main .User-content .discussion .card .post .inspire .comment .stat, main .User-content .discussion .card .post .inspire .share .stat, main .User-content .inspiration .card .post .inspire .like .stat, main .User-content .inspiration .card .post .inspire .comment .stat, main .User-content .inspiration .card .post .inspire .share .stat {
+main .teacher-content .discussion .card .post .inspire .like .stat, main .teacher-content .discussion .card .post .inspire .comment .stat, main .teacher-content .discussion .card .post .inspire .share .stat, main .teacher-content .inspiration .card .post .inspire .like .stat, main .teacher-content .inspiration .card .post .inspire .comment .stat, main .teacher-content .inspiration .card .post .inspire .share .stat {
   font-weight: 600;
   font-size: 14px;
 }
-main .User-content .discussion .card .post .question-activity, main .User-content .inspiration .card .post .question-activity {
+main .teacher-content .discussion .card .post .question-activity, main .teacher-content .inspiration .card .post .question-activity {
   display: grid;
   grid-template-columns: auto 100px;
 }
-main .User-content .discussion .card .post .question-activity .stat, main .User-content .inspiration .card .post .question-activity .stat {
+main .teacher-content .discussion .card .post .question-activity .stat, main .teacher-content .inspiration .card .post .question-activity .stat {
   font-size: 16px;
   color: #000;
   opacity: 0.7;
@@ -1464,206 +1437,136 @@ main .User-content .discussion .card .post .question-activity .stat, main .User-
   margin: auto 0;
   cursor: pointer;
 }
-main .User-content .discussion .card .post .question-activity .answer, main .User-content .inspiration .card .post .question-activity .answer {
+main .teacher-content .discussion .card .post .question-activity .answer, main .teacher-content .inspiration .card .post .question-activity .answer {
   font-size: 12px;
   font-weight: 700;
   text-align: right;
 }
-main .User-content .discussion .card .post .comment-section, main .User-content .inspiration .card .post .comment-section {
-  display: grid;
-  grid-template-columns: 50px auto 85px;
-  padding: 16px;
-  align-items: center;
-  border-top: 1px solid #bbbbbb;
+main .session-feedback {
+  padding: 20px 0 90px;
 }
-main .User-content .discussion .card .post .comment-section .user-image, main .User-content .inspiration .card .post .comment-section .user-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-main .User-content .discussion .card .post .comment-section .user-image img, main .User-content .inspiration .card .post .comment-section .user-image img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top center;
-     object-position: top center;
-}
-main .User-content .discussion .card .post .comment-section .comment-input, main .User-content .inspiration .card .post .comment-section .comment-input {
-  padding: 0 8px;
-}
-main .User-content .discussion .card .post .comment-section .comment-input input, main .User-content .inspiration .card .post .comment-section .comment-input input {
-  width: 100%;
-  border-radius: 25px;
-  padding: 8px 20px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1882352941);
+main .session-feedback .card {
+  padding: 50px 20px;
   border: none;
-}
-main .User-content .discussion .card .post .comment-section .post-comment, main .User-content .inspiration .card .post .comment-section .post-comment {
-  background-color: #FF4E00;
-  border-radius: 20px;
-}
-main .User-content .discussion .card .post .comment-section .post-comment span, main .User-content .inspiration .card .post .comment-section .post-comment span {
-  color: white;
-  font-weight: 400;
-  width: 100%;
+  box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.1882352941);
+  border-radius: 10px;
   text-align: center;
 }
-main .User-content .discussion .card .post .user-comments, main .User-content .inspiration .card .post .user-comments {
-  display: none;
-  padding: 0 30px;
-  margin-bottom: 16px;
-}
-main .User-content .discussion .card .post .user-comments .user-info, main .User-content .inspiration .card .post .user-comments .user-info {
-  display: grid;
-  grid-template-columns: 50px auto;
-  align-items: center;
-  margin: auto;
-}
-main .User-content .discussion .card .post .user-comments .user-info .img, main .User-content .inspiration .card .post .user-comments .user-info .img {
-  width: 36px;
-  height: 36px;
-  border-radius: 50px;
-  overflow: hidden;
-  margin: auto 0;
-  cursor: pointer;
-}
-main .User-content .discussion .card .post .user-comments .user-info .img img, main .User-content .inspiration .card .post .user-comments .user-info .img img {
-  width: 36px;
-  height: 36px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top center;
-     object-position: top center;
-}
-main .User-content .discussion .card .post .user-comments .user-info .users-comment-section, main .User-content .inspiration .card .post .user-comments .user-info .users-comment-section {
-  background-color: rgba(187, 187, 187, 0.1294117647);
-  padding: 12px;
-  border-radius: 8px;
-}
-main .User-content .discussion .card .post .user-comments .user-info .users-comment-section .name, main .User-content .inspiration .card .post .user-comments .user-info .users-comment-section .name {
-  font-weight: 700;
-  cursor: pointer;
-}
-main .User-content .discussion .card .post .user-comments .user-info .users-comment-section .comments span, main .User-content .inspiration .card .post .user-comments .user-info .users-comment-section .comments span {
-  font-weight: 500;
-}
-main .User-content .discussion .card .post .user-comments .user-info .users-comment-section .comments .comment-time, main .User-content .inspiration .card .post .user-comments .user-info .users-comment-section .comments .comment-time {
-  font-size: 12px;
-  margin-left: 5px;
-}
-main .User-content .discussion .card .post .answer-section, main .User-content .inspiration .card .post .answer-section {
-  display: none;
-  padding: 16px 16px 0 16px;
-  border-top: 1px solid #bbbbbb;
-  margin-bottom: 10px;
-}
-main .User-content .discussion .card .post .answer-section .user-info, main .User-content .inspiration .card .post .answer-section .user-info {
-  display: grid;
-  grid-template-columns: 60px auto;
-  align-items: center;
-}
-main .User-content .discussion .card .post .answer-section .user-info .user-img, main .User-content .inspiration .card .post .answer-section .user-info .user-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-main .User-content .discussion .card .post .answer-section .user-info .user-img img, main .User-content .inspiration .card .post .answer-section .user-info .user-img img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top center;
-     object-position: top center;
-}
-main .User-content .discussion .card .post .answer-section .user-info span, main .User-content .inspiration .card .post .answer-section .user-info span {
-  font-weight: bold;
-}
-main .User-content .discussion .card .post .answer-section .answer-area, main .User-content .inspiration .card .post .answer-section .answer-area {
-  margin: 16px 8px;
-}
-main .User-content .discussion .card .post .answer-section .answer-area textarea, main .User-content .inspiration .card .post .answer-section .answer-area textarea {
-  border: none;
-  width: 100%;
-  padding: 8px 16px;
+main .session-feedback .card .intro-line {
+  color: #707070;
   font-size: 15px;
-  background-color: #f5f5f5;
+  margin-bottom: 1rem;
 }
-main .User-content .discussion .card .post .answer-section .answer-area textarea::-webkit-scrollbar, main .User-content .inspiration .card .post .answer-section .answer-area textarea::-webkit-scrollbar {
-  width: 3.5px;
+main .session-feedback .card h4 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
 }
-main .User-content .discussion .card .post .answer-section .answer-area textarea::-webkit-scrollbar-thumb, main .User-content .inspiration .card .post .answer-section .answer-area textarea::-webkit-scrollbar-thumb {
-  background: #a09e9e;
-  border-radius: 5px;
+main .session-feedback .card .course-box .course-banner {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
 }
-main .User-content .discussion .card .post .answer-section .answer-area textarea:focus-visible, main .User-content .inspiration .card .post .answer-section .answer-area textarea:focus-visible {
-  outline: none;
-}
-main .User-content .discussion .card .post .answer-section .answer-post, main .User-content .inspiration .card .post .answer-section .answer-post {
-  text-align: right;
-}
-main .User-content .discussion .card .post .answer-section .answer-post button, main .User-content .inspiration .card .post .answer-section .answer-post button {
-  background-color: #FF4E00;
-  border-radius: 20px;
-  color: #fff;
-  padding: 8px 25px;
-  margin-right: 16px;
-}
-main .User-content .discussion .card .post .users-answers-area, main .User-content .inspiration .card .post .users-answers-area {
-  display: none;
-  overflow-y: scroll;
-  height: 400px;
-}
-main .User-content .discussion .card .post .users-answers-area::-webkit-scrollbar, main .User-content .inspiration .card .post .users-answers-area::-webkit-scrollbar {
-  width: 3px;
-}
-main .User-content .discussion .card .post .users-answers-area::-webkit-scrollbar-thumb, main .User-content .inspiration .card .post .users-answers-area::-webkit-scrollbar-thumb {
-  background: #a09e9e;
-  border-radius: 5px;
-}
-main .User-content .discussion .card .post .users-answers-area .heading, main .User-content .inspiration .card .post .users-answers-area .heading {
-  font-size: 16px;
-  padding: 8px 16px;
-  font-weight: bold;
-  color: rgba(171, 171, 171, 0.9764705882);
-  border-bottom: 1px solid #BBBBBB;
-}
-main .User-content .discussion .card .post .users-answers-area .users-answers .users-answers-content, main .User-content .inspiration .card .post .users-answers-area .users-answers .users-answers-content {
-  padding: 0 20px;
-  margin-top: 20px;
-}
-main .User-content .discussion .card .post .users-answers-area .users-answers .users-answers-content .user-info, main .User-content .inspiration .card .post .users-answers-area .users-answers .users-answers-content .user-info {
-  display: grid;
-  grid-template-columns: 50px auto;
-  align-items: center;
-  margin: auto;
-  cursor: pointer;
-}
-main .User-content .discussion .card .post .users-answers-area .users-answers .users-answers-content .user-info .img, main .User-content .inspiration .card .post .users-answers-area .users-answers .users-answers-content .user-info .img {
-  width: 36px;
-  height: 36px;
-  border-radius: 50px;
-  overflow: hidden;
+main .session-feedback .card .course-box .course-banner img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: auto 0;
+  -o-object-position: center top;
+     object-position: center top;
 }
-main .User-content .discussion .card .post .users-answers-area .users-answers .users-answers-content .user-info .img img, main .User-content .inspiration .card .post .users-answers-area .users-answers .users-answers-content .user-info .img img {
-  width: 36px;
-  height: 36px;
-  -o-object-position: top center;
-     object-position: top center;
+main .session-feedback .card .course-box .course-info {
+  margin-bottom: 1.5rem;
 }
-main .User-content .discussion .card .post .users-answers-area .users-answers .users-answers-content .user-info .name, main .User-content .inspiration .card .post .users-answers-area .users-answers .users-answers-content .user-info .name {
-  font-weight: 700;
+main .session-feedback .card .course-box .course-info h6 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
-main .User-content .discussion .card .post .users-answers-area .users-answers .users-answers-content .users-answers p, main .User-content .inspiration .card .post .users-answers-area .users-answers .users-answers-content .users-answers p {
+main .session-feedback .card h6 {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+main .session-feedback .card .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 !important;
+}
+main .session-feedback .card .item {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 10px;
+}
+main .session-feedback .card .item img {
+  width: 100% !important;
+}
+main .session-feedback .card .radio {
+  display: none;
+}
+main .session-feedback .card .radio ~ img {
+  font-size: 3rem;
+  filter: grayscale(100);
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .session-feedback .card .radio:checked ~ img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+main .session-feedback .card .form-group {
+  margin-bottom: 1.5rem;
+}
+main .session-feedback .card .bttn {
+  text-align: center;
+  padding: 0 25px;
+}
+main .session-feedback .card .bttn .cta {
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: initial;
+  background-color: #FF4E00;
+  padding: 1rem 1.2rem;
+  border-radius: 100px;
+  color: #fff;
   font-size: 14px;
-  font-weight: 500;
-  text-align: justify;
-  padding: 5px 0 0 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+main .session-feedback .card .bttn .cta img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+main .session-feedback .card .bttn .cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 360px) {
+  main .session-feedback .card .intro-line {
+    font-size: 12px;
+  }
+  main .session-feedback .card h4 {
+    font-size: 16px;
+  }
+  main .session-feedback .card .item {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
