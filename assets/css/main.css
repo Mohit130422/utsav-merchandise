@@ -32,6 +32,63 @@ i {
   cursor: pointer;
 }
 
+@-webkit-keyframes fadeDown {
+  from {
+    opacity: 0;
+    margin-top: -2rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 1rem;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    margin-top: -2rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 1rem;
+  }
+}
+@-webkit-keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .top-margin-16 {
   margin-top: 16px !important;
 }
@@ -449,6 +506,83 @@ header .right-box .profile-pic img {
     right: 16px;
     top: 59px;
   }
+}
+
+.blur-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  z-index: 1000;
+}
+.blur-overlay .share-box {
+  background-color: #ffffff;
+  margin: auto;
+  width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
+  -webkit-animation-name: fadeUp;
+          animation-name: fadeUp;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  z-index: 10000;
+  padding: 16px 25px;
+}
+.blur-overlay .share-box .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blur-overlay .share-box .head h5 {
+  font-weight: bold;
+}
+.blur-overlay .share-box .head .close {
+  padding: 0px 8px;
+  background-color: #606060;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.blur-overlay .share-box .share-content {
+  margin: 1rem 0;
+}
+.blur-overlay .share-box .share-content .banner {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+.blur-overlay .share-box .share-content .banner img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 5px;
+}
+.blur-overlay .share-box .share-content .share-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px auto;
+}
+.blur-overlay .share-box .share-content .share-icons img {
+  width: 60px;
+  cursor: pointer;
+}
+.blur-overlay .share-box .share-content button {
+  border-radius: 2px;
 }
 
 main {

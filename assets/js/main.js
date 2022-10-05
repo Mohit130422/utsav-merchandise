@@ -33,6 +33,12 @@ $(document).ready(function () {
     $("#share-course").click(function(){
         $("#share-box").css("display","flex");
     });
+    $("#share-btn").click(function(){
+        $("#share-modal").css("display","flex");
+    });
+    $("#close-share").click(function(){
+        $("#share-modal").hide();
+    });
     $('#recommended-slide').owlCarousel({
         loop:true,
         margin:10,

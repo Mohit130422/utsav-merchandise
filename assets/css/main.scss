@@ -41,7 +41,35 @@ p{
 i{
     cursor: pointer;
 }
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        margin-top: -2rem;
+    }
+    to {
+        opacity: 1;
+        margin-top: 1rem;
+    }
+}
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: scale(.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .top-margin-16{
     margin-top: 16px !important;
 }
@@ -447,7 +475,75 @@ header{
         top: 59px;
     }
 }
-
+.blur-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    z-index: 1000;
+    .share-box{
+        background-color: #ffffff;
+        margin: auto;
+        width: 700px;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgb(0 0 0 / 24%);
+        animation-name: fadeUp;
+        animation-duration: 0.5s;
+        z-index: 10000;
+        padding: 16px 25px;
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h5{
+                font-weight: bold;
+            }
+            .close{
+                padding: 0px 8px;
+                background-color: #606060;
+                color: #fff;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+        .share-content{
+            margin: 1rem 0;
+            .banner{
+                width: 100%;
+                height: 170px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 170px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 5px;
+                }
+            }
+            .share-icons{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 16px auto;
+                img{
+                    width: 60px;
+                    cursor: pointer;
+                }
+            }
+            button{
+                border-radius: 2px;
+            }
+        }
+    }
+}
 main{
     padding: 25px;
     background-color: #fff;
