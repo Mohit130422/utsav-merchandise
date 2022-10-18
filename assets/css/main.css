@@ -835,7 +835,7 @@ main .on-demand .owl-theme .owl-nav .owl-next span {
 }
 main .courses .owl-theme .item,
 main .on-demand .owl-theme .item {
-  padding: 16px 8px;
+  padding: 16px 0px;
 }
 main .courses .card,
 main .on-demand .card {
