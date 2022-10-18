@@ -39,6 +39,12 @@ $(document).ready(function () {
     $("#close-share").click(function(){
         $("#share-modal").hide();
     });
+    $("#buyNow").click(function(){
+        $("#subscription-modal").css("display","flex");
+    });
+    $("#close-subscription").click(function(){
+        $("#subscription-modal").hide();
+    });
     $('#recommended-slide').owlCarousel({
         loop:true,
         margin:10,
