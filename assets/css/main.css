@@ -1019,6 +1019,7 @@ main .on-demand .teachers-intro img {
 }
 main .courses .teachers-intro .card-body,
 main .on-demand .teachers-intro .card-body {
+  position: relative;
   padding: 0;
   margin-top: 8px;
 }
@@ -1040,12 +1041,13 @@ main .courses .teachers-intro .card-body .card-text a,
 main .on-demand .teachers-intro .card-body .card-text a {
   color: #FF4E00;
 }
-main .courses .teachers-intro .card-body .follow,
-main .on-demand .teachers-intro .card-body .follow {
-  bottom: 0;
+main .courses .teachers-intro .follow,
+main .on-demand .teachers-intro .follow {
+  bottom: 8px;
+  position: absolute;
 }
-main .courses .teachers-intro .card-body .follow .btn,
-main .on-demand .teachers-intro .card-body .follow .btn {
+main .courses .teachers-intro .follow .btn,
+main .on-demand .teachers-intro .follow .btn {
   background-color: #FF4E00;
   color: #fff;
   border-radius: 30px;
@@ -1058,13 +1060,13 @@ main .on-demand .teachers-intro .card-body .follow .btn {
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   box-shadow: 0 1px 2px rgba(155, 14, 142, 0.5);
 }
-main .courses .teachers-intro .card-body .follow .btn:hover,
-main .on-demand .teachers-intro .card-body .follow .btn:hover {
+main .courses .teachers-intro .follow .btn:hover,
+main .on-demand .teachers-intro .follow .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(155, 14, 142, 0.5);
 }
-main .courses .teachers-intro .card-body .follow .btn:focus,
-main .on-demand .teachers-intro .card-body .follow .btn:focus {
+main .courses .teachers-intro .follow .btn:focus,
+main .on-demand .teachers-intro .follow .btn:focus {
   outline: none;
 }
 main .class-player {

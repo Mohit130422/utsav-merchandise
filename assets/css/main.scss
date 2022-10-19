@@ -950,6 +950,7 @@ main{
                 border-radius: 50%;
             }
             .card-body{
+                position: relative;
                 padding: 0;
                 margin-top: 8px;
                 .card-title{
@@ -967,32 +968,32 @@ main{
                         color: $primary-color;
                     }
                 }
-                .follow{
-                    // position: absolute;
-                    bottom: 0;
-                    .btn{
-                        background-color: $primary-color;
-                        color: #fff;
-                        border-radius: 30px;
-                        padding: 5px 16px;
-                        text-decoration: none;
-                        border: none;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        margin: 16px auto;
-                        transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
-                        box-shadow: 0 1px 2px rgba($secondary-color, .5);
-                        &:hover {
-                            transform: translateY(-2px);
-                            box-shadow: 0 4px 8px rgba($secondary-color, .5);
-                        }
-                        &:focus{
-                            outline: none;
-                        }
+            }
+            
+            .follow{
+                bottom: 8px;
+                position: absolute;
+                .btn{
+                    background-color: $primary-color;
+                    color: #fff;
+                    border-radius: 30px;
+                    padding: 5px 16px;
+                    text-decoration: none;
+                    border: none;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 16px auto;
+                    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    box-shadow: 0 1px 2px rgba($secondary-color, .5);
+                    &:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 4px 8px rgba($secondary-color, .5);
+                    }
+                    &:focus{
+                        outline: none;
                     }
                 }
             }
-            
         }
         
     }
