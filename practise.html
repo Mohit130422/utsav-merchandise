@@ -399,7 +399,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn">BOOK</button>
+                            <button class="solid-action-btn" id="book-session">BOOK</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -566,6 +566,24 @@
             </div>
        </section>
     </main>
+
+    <div class="blur-overlay confirmation" id="confirmation-box">
+        <div class="dialog-box" id="normalDialog">
+            <div class="heading">
+                <button class="btnCloseDialog" id="btnCloseDone">
+                <img src="https://www.utsavyoga.com/node_modules/bootstrap-icons/icons/x.svg" alt="">
+            </button>
+            </div>
+            <div class="body">
+                <img src="https://www.utsavyoga.com/assets/img/check-circle.gif" class="dialog-icon">
+                <h4>Session has been scheduled</h4>
+                <span class="mt-3 d-block">You can find your scheduled sessions in <a href="https://www.utsavyoga.com/user/my-session.php">My Sessions</a></span>
+            </div>
+            <div class="footer">
+                <button class="btnDialog btnOK  solid-action-btn" id="btnDone">Close</button>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
 

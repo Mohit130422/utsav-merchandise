@@ -792,6 +792,64 @@ header .right-box .profile-pic img {
 .blur-overlay .subscription-box .subscription-content .order-detail .solid-action-btn {
   font-size: 16px;
 }
+.blur-overlay .dialog-box {
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+  border-radius: 8px;
+  width: 620px;
+  height: 460px;
+  -webkit-animation-name: fadeUp;
+          animation-name: fadeUp;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.blur-overlay .dialog-box .heading {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.blur-overlay .dialog-box .heading .btnCloseDialog {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.blur-overlay .dialog-box .heading .btnCloseDialog img {
+  height: 24px;
+  width: 24px;
+  opacity: 0.5;
+}
+.blur-overlay .dialog-box .body {
+  min-height: 320px;
+  max-height: auto;
+  overflow: auto;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+.blur-overlay .dialog-box .body .dialog-icon {
+  display: block;
+  margin: 1rem auto;
+  width: 56px;
+  height: 56px;
+}
+.blur-overlay .dialog-box .body a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.blur-overlay .dialog-box .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 1rem;
+}
 
 main {
   padding: 25px;

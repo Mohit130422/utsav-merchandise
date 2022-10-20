@@ -45,6 +45,12 @@ $(document).ready(function () {
     $("#close-subscription").click(function(){
         $("#subscription-modal").hide();
     });
+    $('#book-session').click(function(){
+        $("#confirmation-box").css("display","flex");
+    });
+    $("#btnCloseDone, #btnDone").click(function(){
+        $("#confirmation-box").hide();
+    });
     $('#recommended-slide').owlCarousel({
         loop:true,
         margin:10,
