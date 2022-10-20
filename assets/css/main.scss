@@ -128,10 +128,6 @@ i{
         transform: translateY(-2px);
     }
 }
-.line{
-    height: 1px;
-    background-color: #F5F5F5;
-}
 header{
     position: sticky;
     top: 0;
@@ -842,10 +838,16 @@ main{
                     border: 1px solid #a09e9e;
                     width: 40px;
                     height: 40px;
+                    background-color: #ffff;
+                    box-shadow: 2px 2px 16px #00000030;
                     span{
                         font-size: 30px;
                         font-weight: 500;
                         line-height: 1;
+            
+                    }
+                    &:hover{
+                        background-color: #a09e9e;
                     }
                 }
             }
@@ -987,7 +989,7 @@ main{
                         border-radius: 5px;
                         margin: 8px 5px;
                         width: 120px;
-                        min-height: 45px;
+                        min-height: 50px;
                         align-items: center;
                         span{
                             word-wrap: break-word;
@@ -1006,20 +1008,29 @@ main{
             justify-content: center;
             padding: 16px;
             align-items: center;
-            height: 270px !important;
+            height: 240px !important;
             margin-bottom: 16px;
             text-align: center;
+            position: relative;
+            #teachers-slide{
+                .item{
+                    padding: 45px 0px 16px !important;
+                }
+            }
             img{
-                width: 80px;
-                height: 80px;
+                position: absolute;
+                width: 115px;
+                height: 115px;
                 object-fit: cover;
                 object-position: top center;
                 border-radius: 50%;
+                top: -50px;
+                border: 4px solid $primary-color;
             }
             .card-body{
                 position: relative;
                 padding: 0;
-                margin-top: 8px;
+                margin-top: 60px;
                 .card-title{
                     font-weight: 600;
                 }
@@ -1037,24 +1048,23 @@ main{
                 }
             }
             .follow{
-                bottom: 8px;
-                position: absolute;
                 .btn{
-                    background-color: $primary-color;
-                    color: #fff;
-                    border-radius: 30px;
+                    bottom: -15px;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    background-color: #fff;
+                    color: #FF4E00;
+                    border-radius: 0px;
                     padding: 5px 16px;
                     text-decoration: none;
-                    border: none;
+                    border-color: $primary-color;
                     text-transform: uppercase;
                     font-weight: 600;
                     margin: 16px auto;
+                    outline: none;
                     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
                     box-shadow: 0 1px 2px rgba($secondary-color, .5);
-                    &:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 4px 8px rgba($secondary-color, .5);
-                    }
                     &:focus{
                         outline: none;
                     }
@@ -1393,7 +1403,7 @@ main{
               cursor: pointer;
             }
             .nav-item{
-                justify-content: start;
+                justify-content: center;
             }
         }
     }
@@ -1444,7 +1454,7 @@ main{
                 .session-tag{
                     position: absolute;
                     top: 4px;
-                    right: 60px;
+                    right: 65px;
                     background-color: #7CB342;
                     color: $light-color;
                     padding: 2px 8px;
@@ -1507,6 +1517,13 @@ main{
         }
         .solid-action-btn{
             border-radius: 0;
+            font-size: 14px;
+        }
+        .cancel{
+            background-color: #E0E0E0;
+            border-color: #E0E0E0;
+            font-weight: bolder;
+            color: $primary-color;
         }
         .join{
             background-color: #E0E0E0;
@@ -1517,16 +1534,18 @@ main{
             border-color: #7CB342;
         }
     }
-    .saved-menu{
+    .saved-menu, .session-menu{
         display: flex;
+        justify-content: center;
         ul{
             display: flex;
             justify-content: center;
             align-items: center;
             margin: auto;
+            padding-left: 0;
             li{
                 list-style: none;
-                margin: 10px 16px;
+                margin: 10px 10px;
                 a{
                     padding: 8px;
                 }
@@ -1537,17 +1556,17 @@ main{
             }
         }
         @media(max-width:768px){
-            overflow-x: scroll;
-            margin: 1rem auto;
-            &::-webkit-scrollbar{
-                height: 5px;
-                cursor: pointer;
-            }
-            &::-webkit-scrollbar-thumb {
-              background: #a09e9e; 
-              border-radius: 5px;
-              cursor: pointer;
-            }
+            // overflow-x: scroll;
+            // margin: 1rem auto;
+            // &::-webkit-scrollbar{
+            //     height: 5px;
+            //     cursor: pointer;
+            // }
+            // &::-webkit-scrollbar-thumb {
+            //   background: #a09e9e; 
+            //   border-radius: 5px;
+            //   cursor: pointer;
+            // }
             .nav-item{
                 justify-content: start;
             }

@@ -155,11 +155,6 @@ i {
   transform: translateY(-2px);
 }
 
-.line {
-  height: 1px;
-  background-color: #F5F5F5;
-}
-
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -883,6 +878,8 @@ main .on-demand .owl-theme .owl-nav .owl-next {
   border: 1px solid #a09e9e;
   width: 40px;
   height: 40px;
+  background-color: white;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1882352941);
 }
 main .courses .owl-theme .owl-nav .owl-prev span, main .courses .owl-theme .owl-nav .owl-next span,
 main .on-demand .owl-theme .owl-nav .owl-prev span,
@@ -890,6 +887,11 @@ main .on-demand .owl-theme .owl-nav .owl-next span {
   font-size: 30px;
   font-weight: 500;
   line-height: 1;
+}
+main .courses .owl-theme .owl-nav .owl-prev:hover, main .courses .owl-theme .owl-nav .owl-next:hover,
+main .on-demand .owl-theme .owl-nav .owl-prev:hover,
+main .on-demand .owl-theme .owl-nav .owl-next:hover {
+  background-color: #a09e9e;
 }
 main .courses .owl-theme .item,
 main .on-demand .owl-theme .item {
@@ -1057,7 +1059,7 @@ main .on-demand .categories .cat-item li label {
   border-radius: 5px;
   margin: 8px 5px;
   width: 120px;
-  min-height: 45px;
+  min-height: 50px;
   align-items: center;
 }
 main .courses .categories .cat-item li label span,
@@ -1075,25 +1077,33 @@ main .on-demand .teachers-intro {
   justify-content: center;
   padding: 16px;
   align-items: center;
-  height: 270px !important;
+  height: 240px !important;
   margin-bottom: 16px;
   text-align: center;
+  position: relative;
+}
+main .courses .teachers-intro #teachers-slide .item,
+main .on-demand .teachers-intro #teachers-slide .item {
+  padding: 45px 0px 16px !important;
 }
 main .courses .teachers-intro img,
 main .on-demand .teachers-intro img {
-  width: 80px;
-  height: 80px;
+  position: absolute;
+  width: 115px;
+  height: 115px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
   border-radius: 50%;
+  top: -50px;
+  border: 4px solid #FF4E00;
 }
 main .courses .teachers-intro .card-body,
 main .on-demand .teachers-intro .card-body {
   position: relative;
   padding: 0;
-  margin-top: 8px;
+  margin-top: 60px;
 }
 main .courses .teachers-intro .card-body .card-title,
 main .on-demand .teachers-intro .card-body .card-title {
@@ -1113,29 +1123,24 @@ main .courses .teachers-intro .card-body .card-text a,
 main .on-demand .teachers-intro .card-body .card-text a {
   color: #FF4E00;
 }
-main .courses .teachers-intro .follow,
-main .on-demand .teachers-intro .follow {
-  bottom: 8px;
-  position: absolute;
-}
 main .courses .teachers-intro .follow .btn,
 main .on-demand .teachers-intro .follow .btn {
-  background-color: #FF4E00;
-  color: #fff;
-  border-radius: 30px;
+  bottom: -15px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  color: #FF4E00;
+  border-radius: 0px;
   padding: 5px 16px;
   text-decoration: none;
-  border: none;
+  border-color: #FF4E00;
   text-transform: uppercase;
   font-weight: 600;
   margin: 16px auto;
+  outline: none;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   box-shadow: 0 1px 2px rgba(155, 14, 142, 0.5);
-}
-main .courses .teachers-intro .follow .btn:hover,
-main .on-demand .teachers-intro .follow .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(155, 14, 142, 0.5);
 }
 main .courses .teachers-intro .follow .btn:focus,
 main .on-demand .teachers-intro .follow .btn:focus {
@@ -1481,7 +1486,7 @@ main .nav-menu .nav-item li label span {
     cursor: pointer;
   }
   main .nav-menu .nav-item {
-    justify-content: start;
+    justify-content: center;
   }
 }
 main .live-sessions {
@@ -1535,7 +1540,7 @@ main .live-sessions .content .image img {
 main .live-sessions .content .image .session-tag {
   position: absolute;
   top: 4px;
-  right: 60px;
+  right: 65px;
   background-color: #7CB342;
   color: #fff;
   padding: 2px 8px;
@@ -1592,6 +1597,13 @@ main .live-sessions .content .session-info .option i {
 }
 main .live-sessions .solid-action-btn {
   border-radius: 0;
+  font-size: 14px;
+}
+main .live-sessions .cancel {
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
+  font-weight: bolder;
+  color: #FF4E00;
 }
 main .live-sessions .join {
   background-color: #E0E0E0;
@@ -1601,44 +1613,33 @@ main .live-sessions .join-action {
   background-color: #7CB342;
   border-color: #7CB342;
 }
-main .saved-menu {
+main .saved-menu, main .session-menu {
   display: flex;
+  justify-content: center;
 }
-main .saved-menu ul {
+main .saved-menu ul, main .session-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-left: 0;
 }
-main .saved-menu ul li {
+main .saved-menu ul li, main .session-menu ul li {
   list-style: none;
-  margin: 10px 16px;
+  margin: 10px 10px;
 }
-main .saved-menu ul li a {
+main .saved-menu ul li a, main .session-menu ul li a {
   padding: 8px;
 }
-main .saved-menu ul li .active {
+main .saved-menu ul li .active, main .session-menu ul li .active {
   color: #FF4E00;
   border-bottom: thin solid #FF4E00;
 }
 @media (max-width: 768px) {
-  main .saved-menu {
-    overflow-x: scroll;
-    margin: 1rem auto;
-  }
-  main .saved-menu::-webkit-scrollbar {
-    height: 5px;
-    cursor: pointer;
-  }
-  main .saved-menu::-webkit-scrollbar-thumb {
-    background: #a09e9e;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  main .saved-menu .nav-item {
+  main .saved-menu .nav-item, main .session-menu .nav-item {
     justify-content: start;
   }
-  main .saved-menu a {
+  main .saved-menu a, main .session-menu a {
     font-size: 12px;
     white-space: pre;
   }

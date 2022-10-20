@@ -209,25 +209,13 @@
                                 <li>
                                     <input type="radio" name="courses" id="today" value="" checked>
                                     <label for="today">
-                                        <span>Today</span>
+                                        <span>Sessions</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" name="courses" id="upcoming" value="">
                                     <label for="upcoming">
-                                        <span>Upcoming</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="saved" value="">
-                                    <label for="saved">
-                                        <span>Saved</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="Complete" value="">
-                                    <label for="Complete">
-                                        <span>Completed</span>
+                                        <span>Video Courses</span>
                                     </label>
                                 </li>
                             </div>
@@ -244,23 +232,20 @@
                         <div class="saved-menu">
                             <ul>
                                 <li>
-                                    <a href="" class="link active">All</a>
-                                </li>
-                                <li>
-                                    <a href="" class="link">Courses</a>
-                                </li>
-                                <li>
                                     <a href="" class="link">On-demand Classes</a>
                                 </li>
                                 <li>
-                                    <a href="" class="link">Meditaiton</a>
+                                    <a href="" class="link active">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">Bookmarked</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="saved-course">
-                    <div class="row mt-4">
+                    <div class="row mt-4 mb-4">
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                             <div class="card">
                                 <a href="" class="img-wrapper">
@@ -369,6 +354,23 @@
        </section>
        <section class="today-upcoming">
             <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="session-menu">
+                            <ul>
+                                <li>
+                                    <a href="" class="link active">Today</a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">Upcoming</a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">Completed</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="row mt-4">
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="live-sessions">
@@ -376,7 +378,7 @@
                                 <div class="image">
                                     <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
                                     <div class="session-tag">
-                                        <span>Live Class</span>
+                                        <span>In Studio</span>
                                     </div>
                                 </div>
                                 <div class="teacher-info">
@@ -386,7 +388,7 @@
                                     <span>2:00 - 3:00 PM</span> | <span>Saturday</span>
                                 </div>
                                 <div class="live-time">
-                                    <span>Live in</span><br><span>3 days 8 hrs</span>
+                                    <span>Starts in</span><br><span>3 days 8 hrs</span>
                                 </div>
                                 <div class="session-info">
                                     <div class="session-name">
@@ -400,6 +402,38 @@
                                 </div>
                             </div>
                             <button class="solid-action-btn" id="book-session">BOOK</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="live-sessions">
+                            <div class="content">
+                                <div class="image">
+                                    <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
+                                    <div class="session-tag">
+                                        <span>In Studio</span>
+                                    </div>
+                                </div>
+                                <div class="teacher-info">
+                                    <span class="name">Teacher Name</span>
+                                </div>
+                                <div class="session-time">
+                                    <span>2:00 - 3:00 PM</span> | <span>Today</span>
+                                </div>
+                                <div class="live-time">
+                                    <span>Starts in</span><br><span>3 Hrs 44 Min</span>
+                                </div>
+                                <div class="session-info">
+                                    <div class="session-name">
+                                        <p>Intermediate Vinayasa Session</p>
+                                        <span>(Relaxed & Restorative)</span><br>
+                                        <span class="duration">60 Min | More Information</span>
+                                    </div>
+                                    <div class="option">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="solid-action-btn cancel">Cancel</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -546,7 +580,7 @@
                                     <span>2:00 - 3:00 PM</span> | <span>Today</span>
                                 </div>
                                 <div class="live-time">
-                                    <span>Live in</span><br><span>3 Hrs 44 Min</span>
+                                    <span>Ends in</span><br><span>3 Hrs 44 Min</span>
                                 </div>
                                 <div class="session-info">
                                     <div class="session-name">
