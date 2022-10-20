@@ -997,6 +997,20 @@ main .on-demand .card .duration .category {
   border-radius: 5px;
   cursor: pointer;
 }
+@media (max-width: 576px) {
+  main .courses .card .img-wrapper,
+main .on-demand .card .img-wrapper {
+    height: 140px;
+  }
+  main .courses .card .img-wrapper img,
+main .on-demand .card .img-wrapper img {
+    height: 140px;
+  }
+  main .courses .card .card-body,
+main .on-demand .card .card-body {
+    padding: 0.5rem 0.5rem;
+  }
+}
 main .courses .categories,
 main .on-demand .categories {
   overflow-x: scroll;
@@ -1041,9 +1055,9 @@ main .on-demand .categories .cat-item li label {
   padding: 8px 3px;
   box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  margin: 8px 8px;
-  width: 135px;
-  min-height: 75px;
+  margin: 8px 5px;
+  width: 120px;
+  min-height: 45px;
   align-items: center;
 }
 main .courses .categories .cat-item li label span,
@@ -1051,8 +1065,8 @@ main .on-demand .categories .cat-item li label span {
   word-wrap: break-word;
   text-align: center;
   font-weight: 600;
-  font-size: 14px;
-  padding: 0 16px;
+  font-size: 11px;
+  padding: 0 8px;
 }
 main .courses .teachers-intro,
 main .on-demand .teachers-intro {
