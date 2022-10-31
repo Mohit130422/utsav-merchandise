@@ -944,9 +944,9 @@ main{
             }
             @media (max-width:576px){
                 .img-wrapper{
-                    height: 140px;
+                    height: 150px;
                     img{
-                        height: 140px;
+                        height: 150px;
                     }
                 }
                 .card-body{
@@ -1025,7 +1025,7 @@ main{
                 object-position: top center;
                 border-radius: 50%;
                 top: -50px;
-                border: 4px solid $primary-color;
+                border: 3px solid $primary-color;
             }
             .card-body{
                 position: relative;

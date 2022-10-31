@@ -1002,11 +1002,11 @@ main .on-demand .card .duration .category {
 @media (max-width: 576px) {
   main .courses .card .img-wrapper,
 main .on-demand .card .img-wrapper {
-    height: 140px;
+    height: 150px;
   }
   main .courses .card .img-wrapper img,
 main .on-demand .card .img-wrapper img {
-    height: 140px;
+    height: 150px;
   }
   main .courses .card .card-body,
 main .on-demand .card .card-body {
@@ -1097,7 +1097,7 @@ main .on-demand .teachers-intro img {
      object-position: top center;
   border-radius: 50%;
   top: -50px;
-  border: 4px solid #FF4E00;
+  border: 3px solid #FF4E00;
 }
 main .courses .teachers-intro .card-body,
 main .on-demand .teachers-intro .card-body {
