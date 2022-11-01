@@ -209,43 +209,390 @@
                                 <li>
                                     <input type="radio" name="courses" id="today" value="" checked>
                                     <label for="today">
-                                        <span>Sessions</span>
+                                        <span>Today</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" name="courses" id="upcoming" value="">
                                     <label for="upcoming">
-                                        <span>Video Courses</span>
+                                        <span>Upcoming</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="courses" id="bookmarked" value="">
+                                    <label for="bookmarked">
+                                        <span>Bookmarked</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="courses" id="complete" value="">
+                                    <label for="complete">
+                                        <span>Completed</span>
                                     </label>
                                 </li>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
             </div>
        </section> 
-       <section class="courses saved-content d-none">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="saved-menu">
-                            <ul>
-                                <li>
-                                    <a href="" class="link">On-demand Classes</a>
-                                </li>
-                                <li>
-                                    <a href="" class="link active">Courses</a>
-                                </li>
-                                <li>
-                                    <a href="" class="link">Bookmarked</a>
-                                </li>
-                            </ul>
+       <section class="courses today-upcoming">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="section-title mb-4">
+                    <p>studio classes</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="live-sessions">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
+                                <div class="session-tag">
+                                    <span>In Studio</span>
+                                </div>
+                            </div>
+                            <div class="teacher-info">
+                                <span class="name">Teacher Name</span>
+                            </div>
+                            <div class="session-time">
+                                <span>2:00 - 3:00 PM</span> | <span>Saturday</span>
+                            </div>
+                            <div class="live-time">
+                                <span>Starts in</span><br><span>3 days 8 hrs</span>
+                            </div>
+                            <div class="session-info">
+                                <div class="session-name">
+                                    <p>Intermediate Vinayasa Session</p>
+                                    <span>(Relaxed & Restorative)</span><br>
+                                    <span class="duration">60 Min | More Information</span>
+                                </div>
+                                <div class="option">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="solid-action-btn" id="book-session">BOOK</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="live-sessions">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
+                                <div class="session-tag">
+                                    <span>In Studio</span>
+                                </div>
+                            </div>
+                            <div class="teacher-info">
+                                <span class="name">Teacher Name</span>
+                            </div>
+                            <div class="session-time">
+                                <span>2:00 - 3:00 PM</span> | <span>Today</span>
+                            </div>
+                            <div class="live-time">
+                                <span>Starts in</span><br><span>3 Hrs 44 Min</span>
+                            </div>
+                            <div class="session-info">
+                                <div class="session-name">
+                                    <p>Intermediate Vinayasa Session</p>
+                                    <span>(Relaxed & Restorative)</span><br>
+                                    <span class="duration">60 Min | More Information</span>
+                                </div>
+                                <div class="option">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="solid-action-btn cancel">Cancel</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="live-sessions">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
+                                <div class="session-tag">
+                                    <span>Live Class</span>
+                                </div>
+                            </div>
+                            <div class="teacher-info">
+                                <span class="name">Teacher Name</span>
+                            </div>
+                            <div class="session-time">
+                                <span>2:00 - 3:00 PM</span> | <span>Today</span>
+                            </div>
+                            <div class="live-time">
+                                <span>Live in</span><br><span>3 Hrs 44 Min</span>
+                            </div>
+                            <div class="session-info">
+                                <div class="session-name">
+                                    <p>Intermediate Vinayasa Session</p>
+                                    <span>(Relaxed & Restorative)</span><br>
+                                    <span class="duration">60 Min | More Information</span>
+                                </div>
+                                <div class="option">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="solid-action-btn join">Join</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="live-sessions">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
+                                <div class="session-tag">
+                                    <span>Live Class</span>
+                                </div>
+                            </div>
+                            <div class="teacher-info">
+                                <span class="name">Teacher Name</span>
+                            </div>
+                            <div class="session-time">
+                                <span>2:00 - 3:00 PM</span> | <span>Today</span>
+                            </div>
+                            <div class="live-time">
+                                <span>Ends in</span><br><span>44 Min</span>
+                            </div>
+                            <div class="session-info">
+                                <div class="session-name">
+                                    <p>Intermediate Vinayasa Session</p>
+                                    <span>(Relaxed & Restorative)</span><br>
+                                    <span class="duration">60 Min | More Information</span>
+                                </div>
+                                <div class="option">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="solid-action-btn join-action">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="section-title mb-4">
+                    <p>personal training</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="live-sessions">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/profile-pic.jpg" class="card-img-top" alt="...">  
+                                <div class="pt-session-tag">
+                                    <span>Personal Training</span>
+                                </div>
+                            </div>
+                            <div class="teacher-info">
+                                <span class="name">Teacher Name</span>
+                            </div>
+                            <div class="session-time">
+                                <span>2:00 - 3:00 PM</span> | <span>Today</span>
+                            </div>
+                            <div class="live-time">
+                                <span>Live in</span><br><span>3 Hrs 44 Min</span>
+                            </div>
+                            <div class="session-info">
+                                <div class="session-name">
+                                    <p>Intermediate Vinayasa Session</p>
+                                    <span>(Relaxed & Restorative)</span><br>
+                                    <span class="duration">60 Min | More Information</span>
+                                </div>
+                                <div class="option">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="solid-action-btn">Book</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="live-sessions">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/profile-pic.jpg" class="card-img-top" alt="...">  
+                                <div class="pt-session-tag">
+                                    <span>Personal Training</span>
+                                </div>
+                            </div>
+                            <div class="teacher-info">
+                                <span class="name">Teacher Name</span>
+                            </div>
+                            <div class="session-time">
+                                <span>2:00 - 3:00 PM</span> | <span>Today</span>
+                            </div>
+                            <div class="live-time">
+                                <span>Live in</span><br><span>3 Hrs 44 Min</span>
+                            </div>
+                            <div class="session-info">
+                                <div class="session-name">
+                                    <p>Intermediate Vinayasa Session</p>
+                                    <span>(Relaxed & Restorative)</span><br>
+                                    <span class="duration">60 Min | More Information</span>
+                                </div>
+                                <div class="option">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="solid-action-btn join">join</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="live-sessions">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/profile-pic.jpg" class="card-img-top" alt="...">  
+                                <div class="pt-session-tag">
+                                    <span>Personal Training</span>
+                                </div>
+                            </div>
+                            <div class="teacher-info">
+                                <span class="name">Teacher Name</span>
+                            </div>
+                            <div class="session-time">
+                                <span>2:00 - 3:00 PM</span> | <span>Today</span>
+                            </div>
+                            <div class="live-time">
+                                <span>Ends in</span><br><span>3 Hrs 44 Min</span>
+                            </div>
+                            <div class="session-info">
+                                <div class="session-name">
+                                    <p>Intermediate Vinayasa Session</p>
+                                    <span>(Relaxed & Restorative)</span><br>
+                                    <span class="duration">60 Min | More Information</span>
+                                </div>
+                                <div class="option">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="solid-action-btn join-action">join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="section-title mb-4">
+                    <p>On-Demand Classes</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <a href="" class="img-wrapper">
+                            <img src="assets/images/newsletter-video2.png" class="card-img-top owl-lazy" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="title">
+                              <p class="card-text">Easy Yoga for Complete Beginners </p>
+                              <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="duration">
+                              <span>10 Classes | 20 Hrs</span>
+                              <span class="category">On-Demand Classes</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <a href="" class="img-wrapper">
+                            <img src="assets/images/april-newsletter-03.png" class="card-img-top owl-lazy" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="title">
+                              <p class="card-text">Easy Yoga for Complete Beginners </p>
+                              <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="duration">
+                              <span>10 Classes | 20 Hrs</span>
+                              <span class="category">On-demand Class</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <a href="" class="img-wrapper">
+                            <img src="assets/images/april-newsletter-04.png" class="card-img-top owl-lazy" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="title">
+                              <p class="card-text">Easy Yoga for Complete Beginners </p>
+                              <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="duration">
+                              <span>10 Classes | 20 Hrs</span>
+                              <span class="category">On-Demand Classes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="section-title mb-4">
+                    <p>Courses</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <a href="" class="img-wrapper">
+                            <img src="assets/images/newsletter-video2.png" class="card-img-top owl-lazy" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="title">
+                              <p class="card-text">Easy Yoga for Complete Beginners </p>
+                              <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="duration">
+                              <span>10 Classes | 20 Hrs</span>
+                              <span class="category">Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <a href="" class="img-wrapper">
+                            <img src="assets/images/april-newsletter-03.png" class="card-img-top owl-lazy" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="title">
+                              <p class="card-text">Easy Yoga for Complete Beginners </p>
+                              <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="duration">
+                              <span>10 Classes | 20 Hrs</span>
+                              <span class="category">Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <a href="" class="img-wrapper">
+                            <img src="assets/images/april-newsletter-04.png" class="card-img-top owl-lazy" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="title">
+                              <p class="card-text">Easy Yoga for Complete Beginners </p>
+                              <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="duration">
+                              <span>10 Classes | 20 Hrs</span>
+                              <span class="category">Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <section class="courses saved-content d-none">
+            <div class="container">
                 <div class="saved-course">
                     <div class="row mt-4 mb-4">
+                        <div class="section-title mb-4">
+                            <p>On-Demand Classes</p>
+                        </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                             <div class="card">
                                 <a href="" class="img-wrapper">
@@ -258,7 +605,7 @@
                                     </div>
                                     <div class="duration">
                                       <span>10 Classes | 20 Hrs</span>
-                                      <span class="category">Course</span>
+                                      <span class="category">On-Demand Classes</span>
                                     </div>
                                 </div>
                             </div>
@@ -292,15 +639,20 @@
                                     </div>
                                     <div class="duration">
                                       <span>10 Classes | 20 Hrs</span>
-                                      <span class="category">Meditaiton</span>
+                                      <span class="category">On-Demand Classes</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row mt-4 mb-4">
+                        <div class="section-title mb-4">
+                            <p>Courses</p>
+                        </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                             <div class="card">
                                 <a href="" class="img-wrapper">
-                                    <img src="assets/images/newsletter02.png" class="card-img-top owl-lazy" alt="...">
+                                    <img src="assets/images/newsletter-video2.png" class="card-img-top owl-lazy" alt="...">
                                 </a>
                                 <div class="card-body">
                                     <div class="title">
@@ -309,7 +661,7 @@
                                     </div>
                                     <div class="duration">
                                       <span>10 Classes | 20 Hrs</span>
-                                      <span class="category">On-demand Class</span>
+                                      <span class="category">Courses</span>
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +669,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                             <div class="card">
                                 <a href="" class="img-wrapper">
-                                    <img src="assets/images/newsletter-video1.png" class="card-img-top owl-lazy" alt="...">
+                                    <img src="assets/images/april-newsletter-03.png" class="card-img-top owl-lazy" alt="...">
                                 </a>
                                 <div class="card-body">
                                     <div class="title">
@@ -326,7 +678,7 @@
                                     </div>
                                     <div class="duration">
                                       <span>10 Classes | 20 Hrs</span>
-                                      <span class="category">Course</span>
+                                      <span class="category">Courses</span>
                                     </div>
                                 </div>
                             </div>
@@ -334,7 +686,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                             <div class="card">
                                 <a href="" class="img-wrapper">
-                                    <img src="assets/images/newsletter01.png" class="card-img-top owl-lazy" alt="...">
+                                    <img src="assets/images/april-newsletter-04.png" class="card-img-top owl-lazy" alt="...">
                                 </a>
                                 <div class="card-body">
                                     <div class="title">
@@ -343,7 +695,7 @@
                                     </div>
                                     <div class="duration">
                                       <span>10 Classes | 20 Hrs</span>
-                                      <span class="category">Meditaiton</span>
+                                      <span class="category">Courses</span>
                                     </div>
                                 </div>
                             </div>
@@ -352,252 +704,180 @@
                 </div>
             </div>
        </section>
-       <section class="today-upcoming">
+       <section class="completed d-none">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="session-menu">
-                            <ul>
-                                <li>
-                                    <a href="" class="link active">Today</a>
-                                </li>
-                                <li>
-                                    <a href="" class="link">Upcoming</a>
-                                </li>
-                                <li>
-                                    <a href="" class="link">Completed</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="live-sessions">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
-                                    <div class="session-tag">
-                                        <span>In Studio</span>
+                        <div class="completed-list">
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Relax & Restore</span>
+                                            <span class="class-type">in studio</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> |  <span class="time ml-4">9:00 PM</span>
                                     </div>
-                                </div>
-                                <div class="teacher-info">
-                                    <span class="name">Teacher Name</span>
-                                </div>
-                                <div class="session-time">
-                                    <span>2:00 - 3:00 PM</span> | <span>Saturday</span>
-                                </div>
-                                <div class="live-time">
-                                    <span>Starts in</span><br><span>3 days 8 hrs</span>
-                                </div>
-                                <div class="session-info">
-                                    <div class="session-name">
-                                        <p>Intermediate Vinayasa Session</p>
-                                        <span>(Relaxed & Restorative)</span><br>
-                                        <span class="duration">60 Min | More Information</span>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fas fa-ellipsis-v"></i>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn" id="book-session">BOOK</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="live-sessions">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
-                                    <div class="session-tag">
-                                        <span>In Studio</span>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Personalised Yoga Training</span>
+                                            <span class="class-type">personal training</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> |  <span class="time ml-4">9:00 PM</span>
                                     </div>
-                                </div>
-                                <div class="teacher-info">
-                                    <span class="name">Teacher Name</span>
-                                </div>
-                                <div class="session-time">
-                                    <span>2:00 - 3:00 PM</span> | <span>Today</span>
-                                </div>
-                                <div class="live-time">
-                                    <span>Starts in</span><br><span>3 Hrs 44 Min</span>
-                                </div>
-                                <div class="session-info">
-                                    <div class="session-name">
-                                        <p>Intermediate Vinayasa Session</p>
-                                        <span>(Relaxed & Restorative)</span><br>
-                                        <span class="duration">60 Min | More Information</span>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fas fa-ellipsis-v"></i>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn cancel">Cancel</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="live-sessions">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
-                                    <div class="session-tag">
-                                        <span>Live Class</span>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Power Yoga | Beginner And Intermediate</span>
+                                            <span class="class-type">Course</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> | <span class="time">9:00 PM</span>
                                     </div>
-                                </div>
-                                <div class="teacher-info">
-                                    <span class="name">Teacher Name</span>
-                                </div>
-                                <div class="session-time">
-                                    <span>2:00 - 3:00 PM</span> | <span>Today</span>
-                                </div>
-                                <div class="live-time">
-                                    <span>Live in</span><br><span>3 Hrs 44 Min</span>
-                                </div>
-                                <div class="session-info">
-                                    <div class="session-name">
-                                        <p>Intermediate Vinayasa Session</p>
-                                        <span>(Relaxed & Restorative)</span><br>
-                                        <span class="duration">60 Min | More Information</span>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fas fa-ellipsis-v"></i>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn join">Join</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="live-sessions">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="assets/images/profile-pic.png" class="card-img-top" alt="...">  
-                                    <div class="session-tag">
-                                        <span>Live Class</span>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">30 Min Yoga Flows for Beginner</span>
+                                            <span class="class-type">On-Demand Classes</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> | <span class="time">9:00 PM</span>
                                     </div>
-                                </div>
-                                <div class="teacher-info">
-                                    <span class="name">Teacher Name</span>
-                                </div>
-                                <div class="session-time">
-                                    <span>2:00 - 3:00 PM</span> | <span>Today</span>
-                                </div>
-                                <div class="live-time">
-                                    <span>Ends in</span><br><span>44 Min</span>
-                                </div>
-                                <div class="session-info">
-                                    <div class="session-name">
-                                        <p>Intermediate Vinayasa Session</p>
-                                        <span>(Relaxed & Restorative)</span><br>
-                                        <span class="duration">60 Min | More Information</span>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fas fa-ellipsis-v"></i>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn join-action">Join</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="live-sessions">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="assets/images/profile-pic.jpg" class="card-img-top" alt="...">  
-                                    <div class="pt-session-tag">
-                                        <span>Personal Training</span>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Relax & Restore</span>
+                                            <span class="class-type">in studio</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> |  <span class="time ml-4">9:00 PM</span>
                                     </div>
-                                </div>
-                                <div class="teacher-info">
-                                    <span class="name">Teacher Name</span>
-                                </div>
-                                <div class="session-time">
-                                    <span>2:00 - 3:00 PM</span> | <span>Today</span>
-                                </div>
-                                <div class="live-time">
-                                    <span>Live in</span><br><span>3 Hrs 44 Min</span>
-                                </div>
-                                <div class="session-info">
-                                    <div class="session-name">
-                                        <p>Intermediate Vinayasa Session</p>
-                                        <span>(Relaxed & Restorative)</span><br>
-                                        <span class="duration">60 Min | More Information</span>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fas fa-ellipsis-v"></i>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn">Book</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="live-sessions">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="assets/images/profile-pic.jpg" class="card-img-top" alt="...">  
-                                    <div class="pt-session-tag">
-                                        <span>Personal Training</span>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Relax & Restore</span>
+                                            <span class="class-type">in studio</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> |  <span class="time ml-4">9:00 PM</span>
                                     </div>
-                                </div>
-                                <div class="teacher-info">
-                                    <span class="name">Teacher Name</span>
-                                </div>
-                                <div class="session-time">
-                                    <span>2:00 - 3:00 PM</span> | <span>Today</span>
-                                </div>
-                                <div class="live-time">
-                                    <span>Live in</span><br><span>3 Hrs 44 Min</span>
-                                </div>
-                                <div class="session-info">
-                                    <div class="session-name">
-                                        <p>Intermediate Vinayasa Session</p>
-                                        <span>(Relaxed & Restorative)</span><br>
-                                        <span class="duration">60 Min | More Information</span>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fas fa-ellipsis-v"></i>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn join">join</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="live-sessions">
-                            <div class="content">
-                                <div class="image">
-                                    <img src="assets/images/profile-pic.jpg" class="card-img-top" alt="...">  
-                                    <div class="pt-session-tag">
-                                        <span>Personal Training</span>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Relax & Restore</span>
+                                            <span class="class-type">in studio</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> |  <span class="time ml-4">9:00 PM</span>
                                     </div>
-                                </div>
-                                <div class="teacher-info">
-                                    <span class="name">Teacher Name</span>
-                                </div>
-                                <div class="session-time">
-                                    <span>2:00 - 3:00 PM</span> | <span>Today</span>
-                                </div>
-                                <div class="live-time">
-                                    <span>Ends in</span><br><span>3 Hrs 44 Min</span>
-                                </div>
-                                <div class="session-info">
-                                    <div class="session-name">
-                                        <p>Intermediate Vinayasa Session</p>
-                                        <span>(Relaxed & Restorative)</span><br>
-                                        <span class="duration">60 Min | More Information</span>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fas fa-ellipsis-v"></i>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="solid-action-btn join-action">join</button>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Power Yoga | Beginner And Intermediate</span>
+                                            <span class="class-type">Course</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> | <span class="time">9:00 PM</span>
+                                    </div>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">Power Yoga | Beginner And Intermediate</span>
+                                            <span class="class-type">Course</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> | <span class="time">9:00 PM</span>
+                                    </div>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="details">
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <span class="title">30 Min Yoga Flows for Beginner</span>
+                                            <span class="class-type">On-Demand Classes</span>
+                                        </div>
+                                        <span class="date">30-10-2022</span> | <span class="time">9:00 PM</span>
+                                    </div>
+                                    <div class="action">
+                                        <button id="btnDetail" class="link">Details</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="page-numbers">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav class="d-flex justify-content-center">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#"><i class="fas fa-angle-left"></i> Previous</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link number" href="#">1</a></li>
+                                  <li class="page-item active" aria-current="page">
+                                    <span class="page-link number">2</span>
+                                  </li>
+                                  <li class="page-item"><a class="page-link number" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link number" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link number" href="#">5</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Next <i class="fas fa-angle-right"></i></a>
+                                  </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+           </div>
        </section>
     </main>
 
