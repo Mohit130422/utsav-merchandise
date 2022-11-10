@@ -850,6 +850,121 @@ main {
   padding: 25px;
   background-color: #fff;
 }
+main .lp-hero-banner .owl-carousel {
+  width: 100%;
+  margin-top: 0;
+}
+main .lp-hero-banner .owl-carousel .owl-dots {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 1%;
+}
+main .lp-hero-banner .owl-carousel .owl-dots span {
+  width: 10px !important;
+  height: 10px !important;
+}
+main .lp-hero-banner .owl-carousel .owl-dots button {
+  border: none !important;
+  outline: none !important;
+}
+main .lp-hero-banner .owl-carousel .owl-nav button {
+  border: none !important;
+  outline: none !important;
+}
+main .lp-hero-banner .owl-carousel .owl-prev, main .lp-hero-banner .owl-carousel .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff !important;
+  font-size: 65px !important;
+  font-weight: bolder !important;
+  background: none !important;
+}
+main .lp-hero-banner .owl-carousel .owl-prev {
+  left: 1%;
+}
+main .lp-hero-banner .owl-carousel .owl-next {
+  right: 1%;
+}
+main .lp-hero-banner .slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .lp-hero-banner .slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .lp-hero-banner .slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .lp-hero-banner .slide video {
+  display: block;
+  width: 100%;
+  height: 545px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .lp-hero-banner .slide .slide-content {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #fff;
+  padding: 0 20%;
+}
+main .lp-hero-banner .slide .slide-content h1 {
+  font-family: "Yeseva One";
+  display: block;
+  font-size: 4rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+main .lp-hero-banner .slide .slide-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (max-width: 756px) {
+  main .lp-hero-banner .slide .slide-content {
+    padding: 0 10%;
+  }
+  main .lp-hero-banner .slide .slide-content h1 {
+    font-size: 48px !important;
+  }
+  main .lp-hero-banner .slide .slide-content p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 576px) {
+  main .lp-hero-banner .slide .slide-content h1 {
+    font-size: 43px !important;
+  }
+}
 main .courses .section-title,
 main .on-demand .section-title {
   display: flex;
@@ -948,7 +1063,7 @@ main .on-demand .card .title i {
 }
 main .courses .card .title .card-text,
 main .on-demand .card .title .card-text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 8px;
   display: -webkit-box;
@@ -984,6 +1099,20 @@ main .courses .card .title .option .option-box p:hover,
 main .on-demand .card .title .option .option-box p:hover {
   background-color: #ffd4fb;
   overflow: hidden;
+}
+main .courses .card .title .name,
+main .on-demand .card .title .name {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+main .courses .card .des,
+main .on-demand .card .des {
+  font-size: 12px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
 }
 main .courses .card .duration,
 main .on-demand .card .duration {
@@ -1431,6 +1560,40 @@ main .teachers-profiles .btn:hover {
 }
 main .teachers-profiles .btn:focus {
   outline: none;
+}
+main .format-categories {
+  overflow-x: scroll;
+  margin: 1rem 0;
+}
+main .format-categories::-webkit-scrollbar {
+  height: 0px;
+  cursor: pointer;
+}
+main .format-categories::-webkit-scrollbar-thumb {
+  background: #a09e9e;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .format-categories .cat-item {
+  display: flex;
+}
+main .format-categories .cat-item a {
+  list-style: none;
+  border: 2px solid #eee;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin: 16px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+main .format-categories .cat-item a img {
+  margin: auto 8px;
+  width: 30px;
+}
+main .format-categories .cat-item span {
+  font-weight: bold;
+  font-size: 12px;
 }
 main .nav-menu .nav-item {
   display: flex;

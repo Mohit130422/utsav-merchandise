@@ -251,137 +251,273 @@
         </div>
     </div>
     <main>
-        <section class="courses courses-categ">
+        <section class="all-formats">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="section-title">
-                            <p>All categories</p>
+                            <p>FORMATS</p>
                         </div>
-                        <div class="categories">
+                        <div class="format-categories">
                             <div class="cat-item">
-                                <li>
-                                    <input type="radio" name="courses" id="all" value="" checked>
-                                    <label for="all">
-                                        <span>All</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="relax-restore" value="">
-                                    <label for="relax-restore">
-                                        <span>Relaxed &  Restorative</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="pain-management" value="">
-                                    <label for="pain-management">
-                                        <span>Pain Management</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="strength-flex" value="">
-                                    <label for="strength-flex">
-                                        <span>Strength & Flexibility</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="sleep-management" value="">
-                                    <label for="sleep-management">
-                                        <span>Sleep Management</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="weight-management" value="">
-                                    <label for="weight-management">
-                                        <span>Weight Management</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="lifestyle-improve" value="">
-                                    <label for="lifestyle-improve">
-                                        <span>Lifestyle Improvement</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="breathing" value="">
-                                    <label for="breathing">
-                                        <span>Breathing/ Pranayama</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="yinYoga" value="">
-                                    <label for="yinYoga">
-                                        <span>Yin Yoga</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="vinyasa" value="">
-                                    <label for="vinyasa">
-                                        <span>Vinyasa</span>
-                                    </label>
-                                </li>
+                                <a href="">
+                                    <img src="assets/images/icon/course_icon.svg" alt="">
+                                    <span>Courses</span>
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/icon/ondemand_icon.svg" alt="">
+                                    <span>On-Demand Classes</span>
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/icon/pt_icon.svg" alt="">
+                                    <span>Personal Training</span>
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/icon/challanges_icon.svg" alt="">
+                                    <span>Challenges</span>
+                                </a>
+                                <a href="">
+                                    <img src="assets/images/icon/meditation_icon.svg" alt="">
+                                    <span>Meditation</span>
+                                </a>
                             </div>
-                            <div class="cat-item">
-                                <li>
-                                    <input type="radio" name="courses" id="therapy" value="">
-                                    <label for="therapy">
-                                        <span>Therapy</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="nutrition" value="">
-                                    <label for="nutrition">
-                                        <span>Nutrition</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="powerYoga" value="">
-                                    <label for="powerYoga">
-                                        <span>Power Yoga</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="yoga-philosophy" value="">
-                                    <label for="yoga-philosophy">
-                                        <span>Yoga Philosophy</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="postures" value="">
-                                    <label for="postures">
-                                        <span>Postures</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="prenatalYoga" value="">
-                                    <label for="prenatalYoga">
-                                        <span>Pre/Post Natal Yoga</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="facialYoga" value="">
-                                    <label for="facialYoga">
-                                        <span>Facial Yoga</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="selfRealisation" value="">
-                                    <label for="selfRealisation">
-                                        <span>Self Realisation</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="mentalHealth" value="">
-                                    <label for="mentalHealth">
-                                        <span>Mental Health</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="courses" id="meditation" value="">
-                                    <label for="meditation">
-                                        <span>Meditation</span>
-                                    </label>
-                                </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="courses latest-course">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title">
+                            <p>LATEST Courses</p>
+                            <a href="/course-list.html" class="viewall">View All</a>
+                        </div>
+                        <div class="owl-carousel owl-theme" id="recommended-slide">
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="course-detail.html" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-11-09/1667978902152.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                            <p class="card-text">Easy Yoga for Complete Beginners Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nesciunt.</p>
+                                            <div class="option">
+                                                <i class="fas fa-ellipsis-v" id="option"></i>
+                                                <div class="option-box" id="opt-box">
+                                                  <p id="follow">Bookmark</p>
+                                                  <p id="share-btn">Share</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-11-09/1667972469009.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-11-08/1667893225263.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-09-28/1664347639603.png" class="card-img-top owl-lazy" alt="..." >
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-11-07/1667812767706.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-10-18/1666076169147.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="courses latest-on-demand">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title">
+                            <p>LATEST on-demand Classes</p>
+                            <a href="/on-demand-list.html" class="viewall">View All</a>
+                        </div>
+                        <div class="owl-carousel owl-theme" id="trending-slide">
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-09-29/1664443267730.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-09-29/1664446685080.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-09-29/1664449741585.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-10-04/1664867556882.png" class="card-img-top owl-lazy" alt="..." >
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-09-26/1664170666599.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-11-02/1667367833734.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                          <p class="card-text">Easy Yoga for Complete Beginners </p>
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="duration">
+                                          <span>10 Classes | 20 Hrs</span>
+                                          <span class="category">Course</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -444,6 +580,80 @@
                                         <a href="#" class="btn btn-primary">View Profile</a>
                                     </div>
                                 </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="courses all-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title">
+                            <p>ALL PRODUCTS</p>
+                            <a href="/course-list.html" class="viewall">View All</a>
+                        </div>
+                        <div class="owl-carousel owl-theme" id="products-slide">
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="assets/images/product1.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                            <p class="card-text name">Utsav Unlimited</p>
+                                        </div>
+                                        <div class="des">
+                                            <p>Utsav aims to give you a wide variety of Yoga and Meditation formats. You choose your own joyful form which best suits your bodily needs and mental</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="assets/images/product2.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                            <p class="card-text name">Aerial Fit</p>
+                                        </div>
+                                        <div class="des">
+                                            <p>Aerial Fit is a product designed for anyone and everyone who wants to try something new or go deeper into Aerial Fitness, Our subscription plan gives you access to upto..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="assets/images/product3.png" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                            <p class="card-text name">Prenatal Yoga</p>
+                                        </div>
+                                        <div class="des">
+                                            <p>If you're pregnant and looking for ways to relax or stay fit, you might be considering prenatal yoga, which will prepare you for labor and promote your baby's health.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ms-2 me-2">
+                                <div class="card">
+                                    <a href="" class="img-wrapper">
+                                        <img data-src="https://files.utsav.yoga/image/2022-02-11/utsav_live_mob1644577502887.jpg" class="card-img-top owl-lazy" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="title">
+                                            <p class="card-text name">Utsav Live</p>
+                                        </div>
+                                        <div class="des">
+                                            <p>Without the need to arrive at a studio at any certain time, Utsav aims to give you a wide variety of formats at two convenient morning & evening slots. You choose your own joyful form which best suits your bodily needs and mental requirements and can help you find your bliss.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
