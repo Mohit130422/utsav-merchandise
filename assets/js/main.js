@@ -70,6 +70,43 @@ $(document).ready(function () {
             }
         }
     });
+    $('#plans-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        lazyLoad:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+    $('#featuredBanner').owlCarousel({
+        loop: true,
+        margin: 16,
+        dots: true,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
     $('#recommended-slide').owlCarousel({
         loop:true,
         margin:10,
@@ -125,6 +162,24 @@ $(document).ready(function () {
         }
     })
     $('#teachers-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        lazyLoad:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+    $('#members-slide').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
