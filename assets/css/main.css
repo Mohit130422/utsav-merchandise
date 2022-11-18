@@ -893,6 +893,9 @@ main {
   padding: 25px;
   background-color: #fff;
 }
+main .lp-hero-banner {
+  margin-bottom: 50px;
+}
 main .lp-hero-banner .owl-carousel {
   width: 100%;
   margin-top: 0;
@@ -901,7 +904,10 @@ main .lp-hero-banner .owl-carousel .owl-dots {
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
+}
+main .lp-hero-banner .owl-carousel .owl-dots .active span {
+  background-color: #9B0E8E;
 }
 main .lp-hero-banner .owl-carousel .owl-dots span {
   width: 10px !important;
@@ -919,7 +925,7 @@ main .lp-hero-banner .owl-carousel .owl-prev, main .lp-hero-banner .owl-carousel
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: #fff !important;
+  color: rgba(229, 229, 229, 0.6784313725) !important;
   font-size: 65px !important;
   font-weight: bolder !important;
   background: none !important;
@@ -948,21 +954,30 @@ main .lp-hero-banner .slide::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 5px 5px;
 }
-main .lp-hero-banner .slide img {
+main .lp-hero-banner .slide .slide-img-wrapper {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+  background-color: #000;
+}
+main .lp-hero-banner .slide .slide-img-wrapper img {
   display: block;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  height: 90vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: top center;
+     object-position: top center;
+  border-radius: 0 0 5px 5px;
 }
 main .lp-hero-banner .slide video {
   display: block;
   width: 100%;
-  height: 555px;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -971,7 +986,7 @@ main .lp-hero-banner .slide video {
 main .lp-hero-banner .slide .slide-content {
   text-align: center;
   position: absolute;
-  top: 55%;
+  top: 50%;
   transform: translateY(-50%);
   color: #fff;
   padding: 0 20%;
@@ -1004,6 +1019,17 @@ main .lp-hero-banner .slide .slide-content .explore-btn a:hover {
 main .lp-hero-banner .slide .slide-content .explore-btn i {
   margin-top: 20px;
 }
+main .lp-hero-banner .slide .slide-content .try-now-btn a {
+  font-size: 18px;
+  font-weight: 600;
+}
+main .lp-hero-banner .slide .slide-content .try-now-btn a:hover {
+  color: #FF4E00;
+  background-color: #fff;
+}
+main .lp-hero-banner .slide .slide-content .try-now-btn i {
+  margin-top: 20px;
+}
 @media (max-width: 756px) {
   main .lp-hero-banner .slide .slide-content {
     padding: 0 10%;
@@ -1019,6 +1045,46 @@ main .lp-hero-banner .slide .slide-content .explore-btn i {
 @media (max-width: 576px) {
   main .lp-hero-banner .slide .slide-content h1 {
     font-size: 43px !important;
+  }
+}
+main .lp-hero-banner .slide .start-btn .category {
+  position: absolute;
+  background-color: #fff;
+  bottom: 10%;
+  left: 5%;
+  border: thin solid #e1e1e1;
+  padding: 2px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .lp-hero-banner .slide .start-btn .solid-action-btn {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  border-radius: 0;
+  font-size: 16px;
+}
+main .lp-hero-banner .slide .start-btn .solid-action-btn:hover {
+  background-color: #fff;
+  color: #FF4E00;
+}
+@media (max-width: 576px) {
+  main .lp-hero-banner .slide .slide-img-wrapper {
+    height: 250px;
+  }
+  main .lp-hero-banner .slide .slide-img-wrapper img {
+    height: 250px;
+  }
+  main .lp-hero-banner .slide .slide-content .try-now-btn a {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  main .lp-hero-banner .slide .start-btn .category {
+    font-size: 10px;
+  }
+  main .lp-hero-banner .slide .start-btn .solid-action-btn {
+    font-size: 10px;
+    padding: 2px 8px;
   }
 }
 main .courses .section-title,
@@ -1063,6 +1129,17 @@ main .courses .owl-theme .owl-nav .owl-prev:hover, main .courses .owl-theme .owl
 main .on-demand .owl-theme .owl-nav .owl-prev:hover,
 main .on-demand .owl-theme .owl-nav .owl-next:hover {
   background-color: #a09e9e;
+}
+@media (max-width: 576px) {
+  main .courses .owl-theme .owl-nav .owl-prev,
+main .on-demand .owl-theme .owl-nav .owl-prev {
+    left: -16px;
+    padding: 20px;
+  }
+  main .courses .owl-theme .owl-nav .owl-next,
+main .on-demand .owl-theme .owl-nav .owl-next {
+    right: -16px;
+  }
 }
 main .courses .owl-theme .item,
 main .on-demand .owl-theme .item {
@@ -1431,7 +1508,7 @@ main .plans .card .card-body .solid-action-btn {
   width: 100%;
 }
 main .whats-new {
-  margin: 20px auto;
+  padding: 50px 0px;
   position: relative;
 }
 main .whats-new img {
@@ -1463,6 +1540,9 @@ main .whats-new .owl-dots .owl-dot {
 main .whats-new .owl-dots .active {
   opacity: 1;
   width: 16px;
+}
+main .trending-section {
+  padding: 50px 0px;
 }
 main .class-player {
   margin-bottom: 20px;
@@ -2644,6 +2724,11 @@ footer .subscribe-box input[type=submit] {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
   margin: 0 1rem;
+}
+@media (max-width: 768px) {
+  .add-links {
+    margin-bottom: 4rem;
+  }
 }
 
 .alertPopup {
