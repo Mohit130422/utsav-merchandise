@@ -158,11 +158,16 @@ i {
 .heading {
   text-align: center;
   color: #4B1346;
-  margin: 20px auto 0px;
 }
 .heading h5 {
   font-size: 1.75rem;
   font-weight: 600;
+}
+@media (max-width: 576px) {
+  .heading h5 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
 }
 
 header {
@@ -936,6 +941,11 @@ main .lp-hero-banner .owl-carousel .owl-prev {
 main .lp-hero-banner .owl-carousel .owl-next {
   right: 1%;
 }
+@media (max-width: 576px) {
+  main .lp-hero-banner .owl-carousel .owl-dots {
+    bottom: -15%;
+  }
+}
 main .lp-hero-banner .slide, main .lp-hero-banner .trending-slide {
   width: 100%;
   height: 100%;
@@ -1103,6 +1113,17 @@ main .lp-hero-banner .trending-slide .slide-img-wrapper img {
   -o-object-position: center;
      object-position: center;
   border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.11);
+}
+@media (max-width: 576px) {
+  main .lp-hero-banner .trending-slide .slide-img-wrapper {
+    height: 250px;
+  }
+  main .lp-hero-banner .trending-slide .slide-img-wrapper img {
+    height: 250px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
 }
 main .courses .section-title,
 main .on-demand .section-title {
@@ -1528,14 +1549,14 @@ main .whats-new {
 }
 main .whats-new img {
   width: 100%;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.11) 2px 2px 4px;
 }
 main .whats-new img:hover {
   box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
 }
-main .whats-new .owl-stage-outer {
-  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1882352941);
-  border-radius: 10px;
+main .whats-new .owl-item {
+  padding: 16px 8px;
 }
 main .whats-new .owl-dots {
   position: relative;
@@ -1558,6 +1579,16 @@ main .whats-new .owl-dots .active {
 }
 main .trending-section {
   padding: 50px 0px;
+}
+main .trending-section .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+main .trending-section .owl-stage-outer {
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1882352941);
+  border-radius: 10px;
 }
 main .class-player {
   margin-bottom: 20px;
@@ -2038,6 +2069,14 @@ main .live-sessions .content .session-info .option {
 }
 main .live-sessions .content .session-info .option i {
   font-size: 10px;
+}
+@media (max-width: 576px) {
+  main .live-sessions .content .session-time {
+    font-size: 12px;
+  }
+  main .live-sessions .content .image .session-tag {
+    right: 50px;
+  }
 }
 main .live-sessions .solid-action-btn {
   border-radius: 0;

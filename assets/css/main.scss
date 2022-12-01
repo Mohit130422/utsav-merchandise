@@ -135,10 +135,16 @@ i{
 .heading{
     text-align: center;
     color: $secondary-color2;
-    margin: 20px auto 0px;
+    // margin: 20px auto 0px;
     h5{
         font-size: 1.75rem;
         font-weight: 600;
+    }
+    @media (max-width:576px){
+        h5{
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
     }
 }
 header{
@@ -901,6 +907,11 @@ main{
             .owl-next {
                 right: 1%;
             }
+            @media (max-width:576px){
+                .owl-dots{
+                    bottom: -15%;
+                }
+            }
         }
         .slide,.trending-slide{
             width: 100%;
@@ -1069,6 +1080,14 @@ main{
                     object-fit: cover;
                     object-position: center;
                     border-radius: 0 0 5px 5px;
+                    box-shadow: 0 4px 16px rgb(0 0 0 / 11%);
+                }
+                @media (max-width:576px){
+                    height: 250px;
+                    img{
+                        height: 250px;
+                        object-fit: fill;
+                    }
                 }
             }
         }
@@ -1446,14 +1465,14 @@ main{
         position: relative;
         img{
             width: 100%;
-            box-shadow: 0 4px 16px #0000001a;
+            border-radius: 8px;
+            box-shadow: rgb(0 0 0 / 11%) 2px 2px 4px;
             &:hover{
                 box-shadow: 0 16px 16px #00000033;
             }
         }
-        .owl-stage-outer{
-            box-shadow: 0 3px 10px 1px #00000030;
-            border-radius: 10px;
+        .owl-item{
+            padding: 16px 8px;
         }
         .owl-dots {
             position: relative;
@@ -1477,6 +1496,16 @@ main{
     }
     .trending-section{
         padding: 50px 0px; 
+        .section-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .owl-stage-outer{
+            box-shadow: 0 3px 10px 1px #00000030;
+            border-radius: 10px;
+        }
     }
     .class-player{
         margin-bottom: 20px;
@@ -1952,6 +1981,16 @@ main{
                         font-size: 10px;
                      }
             }
+            }
+            @media (max-width:576px){
+                .session-time{
+                    font-size: 12px;
+                }
+                .image{
+                    .session-tag{
+                        right: 50px;
+                    }
+                }
             }
         }
         .solid-action-btn{
