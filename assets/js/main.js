@@ -13,10 +13,14 @@ $(document).ready(function () {
     $(".action-btn").click(function () {
         $("#act-box").toggle()
     });
+    $(".profile-pic").click(function () {
+        $("#profile-box").toggle()
+    });
     $("#close, main").click(function () {
         $("#box").hide();
         $(".sidebar").removeClass('openside');
         $("#act-box").hide();
+        $("#profile-box").hide();
     });
     $(".btnmenu").click(function(){
         $(".sidebar").toggleClass('openside');
