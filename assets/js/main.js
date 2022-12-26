@@ -21,6 +21,7 @@ $(document).ready(function () {
         $(".sidebar").removeClass('openside');
         $("#act-box").hide();
         $("#profile-box").hide();
+        $(".search-area").css({top: "-65%"});
     });
     $(".btnmenu").click(function(){
         $(".sidebar").toggleClass('openside');
@@ -64,6 +65,9 @@ $(document).ready(function () {
     $("#message-box").click(function(){
         $(".chat-box").toggle();
     })
+    $('#search').click(function () {
+        $(".search-area").css({top: "18%"});
+    });
     $("#hero-banner").owlCarousel({
         loop: true,
         margin: 16,
