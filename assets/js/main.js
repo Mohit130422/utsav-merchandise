@@ -55,6 +55,15 @@ $(document).ready(function () {
     $("#btnCloseDone, #btnDone").click(function(){
         $("#confirmation-box").hide();
     });
+    $("#vertical-menu").click(function(){
+        $(".item-menu").css("display","flex");
+    });
+    $(".call-end").click(function(){
+        $("#confirm-modal").css("display","flex");
+    })
+    $("#message-box").click(function(){
+        $(".chat-box").toggle();
+    })
     $("#hero-banner").owlCarousel({
         loop: true,
         margin: 16,
@@ -167,6 +176,24 @@ $(document).ready(function () {
             }
         }
     })
+    $('#guideline-slide').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:true,
+        lazyLoad:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
     $('#products-slide').owlCarousel({
         loop:true,
         margin:10,
@@ -240,5 +267,21 @@ $(document).ready(function () {
             }
         }
     })
+    $("#participants-slide").owlCarousel({
+        loop: true,
+        margin: 16,
+        dots: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
 
 });
