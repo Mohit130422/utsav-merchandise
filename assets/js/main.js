@@ -7,6 +7,13 @@ $(document).ready(function () {
         $(targetBox).show();
     });
 
+    $(window).scroll(function() {
+        $("#act-box").hide()
+        $("#box").hide();
+        $("#profile-box").hide()
+        $(".sidebar").removeClass('openside');
+    });
+
     $("#bell").click(function () {
         $("#box").toggle();
     });

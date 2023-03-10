@@ -32,17 +32,6 @@ i {
   cursor: pointer;
 }
 
-@-webkit-keyframes fadeDown {
-  from {
-    opacity: 0;
-    margin-top: -2rem;
-  }
-  to {
-    opacity: 1;
-    margin-top: 1rem;
-  }
-}
-
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -53,16 +42,6 @@ i {
     margin-top: 1rem;
   }
 }
-@-webkit-keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -71,14 +50,6 @@ i {
   to {
     opacity: 1;
     transform: scale(1);
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -183,10 +154,8 @@ i {
   align-items: center;
   justify-content: center;
   overflow: auto;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
   z-index: 1000;
 }
 .blur-overlay .share-box {
@@ -195,10 +164,8 @@ i {
   width: 700px;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
   z-index: 10000;
   padding: 16px 25px;
 }
@@ -251,10 +218,8 @@ i {
   margin: auto;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
   z-index: 10000;
   padding: 16px 25px 0px;
 }
@@ -450,10 +415,8 @@ i {
   border-radius: 8px;
   width: 620px;
   height: 460px;
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
 }
 .blur-overlay .dialog-box .heading {
   height: 56px;
@@ -776,12 +739,12 @@ main .on-demand .owl-theme .owl-nav .owl-next:hover {
 }
 @media (max-width: 576px) {
   main .courses .owl-theme .owl-nav .owl-prev,
-main .on-demand .owl-theme .owl-nav .owl-prev {
+  main .on-demand .owl-theme .owl-nav .owl-prev {
     left: -16px;
     padding: 20px;
   }
   main .courses .owl-theme .owl-nav .owl-next,
-main .on-demand .owl-theme .owl-nav .owl-next {
+  main .on-demand .owl-theme .owl-nav .owl-next {
     right: -16px;
   }
 }
@@ -907,15 +870,15 @@ main .on-demand .card .duration .category {
 }
 @media (max-width: 576px) {
   main .courses .card .img-wrapper,
-main .on-demand .card .img-wrapper {
+  main .on-demand .card .img-wrapper {
     height: 170px;
   }
   main .courses .card .img-wrapper img,
-main .on-demand .card .img-wrapper img {
+  main .on-demand .card .img-wrapper img {
     height: 170px;
   }
   main .courses .card .card-body,
-main .on-demand .card .card-body {
+  main .on-demand .card .card-body {
     padding: 0.5rem 0.5rem;
   }
 }
@@ -1104,7 +1067,6 @@ main .plans {
   margin: 50px auto 20px;
 }
 main .plans .card {
-  max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
 }
@@ -1604,7 +1566,6 @@ main .live-sessions .content .live-time {
 }
 main .live-sessions .content .image {
   position: relative;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 50px auto 0;
@@ -2162,6 +2123,23 @@ main .session-feedback .card {
   border-radius: 10px;
   text-align: center;
 }
+main .session-feedback .card .rejoin {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+main .session-feedback .card .rejoin a {
+  color: #FF4E00;
+  border: 1px solid #FF4E00;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  margin: 0 16px;
+  text-transform: uppercase;
+}
+main .session-feedback .card .rejoin a:hover {
+  background-color: #FF4E00;
+  color: #fff;
+}
 main .session-feedback .card .intro-line {
   color: #707070;
   font-size: 15px;
@@ -2217,7 +2195,6 @@ main .session-feedback .card .item {
   align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   margin-right: 10px;
 }
@@ -2268,6 +2245,15 @@ main .session-feedback .card .bttn .cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 820px) {
+  main .session-feedback .card .rejoin {
+    flex-direction: column;
+  }
+  main .session-feedback .card .rejoin a {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+}
 @media (max-width: 360px) {
   main .session-feedback .card .intro-line {
     font-size: 12px;
@@ -2292,8 +2278,7 @@ main .session-feedback .card .bttn .cta:hover {
   display: none;
   align-items: center;
   justify-content: center;
-  -webkit-animation: zoomIn 0.15s linear;
-          animation: zoomIn 0.15s linear;
+  animation: zoomIn 0.15s linear;
   z-index: 10000;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);

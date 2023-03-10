@@ -2107,6 +2107,23 @@ main{
             box-shadow: 0 1px 6px 0px #00000030;
             border-radius: 10px;
             text-align: center;
+            .rejoin{
+                display: flex;
+                justify-content: center;
+                margin: 1.5rem;
+                a{
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+                    padding: .5rem 1.5rem;
+                    border-radius: 25px;
+                    margin: 0 16px;
+                    text-transform: uppercase;
+                    &:hover{
+                        background-color: $primary-color;
+                        color: $light-color;
+                    }
+                }
+            }
             .intro-line{
                 color: #707070;
                 font-size: 15px;
@@ -2209,6 +2226,17 @@ main{
                     &:hover {
                         transform: translateY(-2px);
                         box-shadow: 0 4px 8px rgba($text-dark-color, .3);
+                    }
+                }
+            }
+        }
+        @media(max-width:820px){
+            .card{
+                .rejoin{
+                    flex-direction: column;
+                    a{
+                        font-size: 12px;
+                        margin: 8px 0;
                     }
                 }
             }

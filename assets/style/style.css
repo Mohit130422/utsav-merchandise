@@ -6,17 +6,6 @@ body {
   scroll-behavior: smooth;
 }
 
-@-webkit-keyframes fadeDown {
-  from {
-    opacity: 0;
-    margin-top: -2rem;
-  }
-  to {
-    opacity: 1;
-    margin-top: 1rem;
-  }
-}
-
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -25,16 +14,6 @@ body {
   to {
     opacity: 1;
     margin-top: 1rem;
-  }
-}
-@-webkit-keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
   }
 }
 @keyframes fadeUp {
@@ -47,29 +26,11 @@ body {
     transform: scale(1);
   }
 }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes zoomIn {
-  from {
-    transform: scale(0.9) translateY(5px);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1) translateY(0px);
     opacity: 1;
   }
 }
@@ -83,16 +44,6 @@ body {
     opacity: 1;
   }
 }
-@-webkit-keyframes slideUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes slideUp {
   from {
     transform: translateY(100%);
@@ -101,16 +52,6 @@ body {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-@-webkit-keyframes slideDown {
-  from {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(100%);
-    opacity: 0;
   }
 }
 @keyframes slideDown {
@@ -261,7 +202,6 @@ body {
 }
 
 .sidemenu {
-  position: -webkit-sticky;
   position: sticky;
   top: 100px;
   margin: 0;
@@ -316,7 +256,6 @@ body {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 0px 50px;
@@ -1395,10 +1334,8 @@ footer .subscribe-box input[type=submit] {
   width: 420px;
   display: block;
   padding-bottom: 4rem;
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
 }
 .login-wrapper .panel .pane .header {
   background-image: url("../img/login_bg.png");
@@ -1552,7 +1489,6 @@ footer .subscribe-box input[type=submit] {
 }
 .login-wrapper .panel .pane .country-code .country-code-box .search-country {
   border-bottom: thin solid #ddd;
-  position: -webkit-sticky;
   position: sticky;
   padding: 5px 0;
   top: 0;
@@ -1756,10 +1692,8 @@ footer .subscribe-box input[type=submit] {
   align-items: center;
   justify-content: center;
   overflow: auto;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
   z-index: 1000;
 }
 @media (max-width: 576px) {
@@ -1775,10 +1709,8 @@ footer .subscribe-box input[type=submit] {
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
   overflow: hidden;
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
   z-index: 10000;
 }
 @media (max-width: 576px) {
@@ -1809,7 +1741,6 @@ footer .subscribe-box input[type=submit] {
   z-index: 100;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   outline: none;
 }
@@ -1821,7 +1752,6 @@ footer .subscribe-box input[type=submit] {
   opacity: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .blur-overlay .dialog-box .heading .plan-card {
@@ -2176,10 +2106,8 @@ footer .subscribe-box input[type=submit] {
 .blur-overlay .dialog-box .otp-pane,
 .blur-overlay .dialog-box .info-pane,
 .blur-overlay .dialog-box .confirm-pane {
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  animation-name: fadeUp;
+  animation-duration: 0.3s;
 }
 
 .profiles {
@@ -2272,7 +2200,6 @@ footer .subscribe-box input[type=submit] {
 
 .page-header {
   background-color: #ffffff;
-  position: -webkit-sticky;
   position: sticky;
   box-shadow: 0 2px 0.5rem rgba(75, 19, 70, 0.1);
   padding: 0.5rem 0;
@@ -2398,7 +2325,6 @@ footer .subscribe-box input[type=submit] {
 }
 
 .stickyform {
-  position: -webkit-sticky;
   position: sticky;
   top: 3rem;
   display: flex;
@@ -3079,7 +3005,6 @@ footer .subscribe-box input[type=submit] {
   }
   .open .brand {
     justify-content: space-between;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: #ffffff;
@@ -3135,8 +3060,7 @@ footer .subscribe-box input[type=submit] {
   background-color: #F3DDFC;
   padding: 2rem 0;
   z-index: 1000;
-  -webkit-animation: slideUp 1s linear;
-          animation: slideUp 1s linear;
+  animation: slideUp 1s linear;
   opacity: 0.9;
   display: none;
 }
@@ -3164,8 +3088,7 @@ footer .subscribe-box input[type=submit] {
 }
 
 .concentClose {
-  -webkit-animation: slideDown 1s linear;
-          animation: slideDown 1s linear;
+  animation: slideDown 1s linear;
 }
 
 .evolve {
@@ -3254,8 +3177,7 @@ footer .subscribe-box input[type=submit] {
   display: none;
   align-items: center;
   justify-content: center;
-  -webkit-animation: zoomIn 0.15s linear;
-          animation: zoomIn 0.15s linear;
+  animation: zoomIn 0.15s linear;
   z-index: 10000;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -3569,8 +3491,7 @@ footer .subscribe-box input[type=submit] {
 }
 .pageCover .img-box .owl-carousel .active img {
   transform: scale(1);
-  -webkit-animation: fadeIn 0.25s linear;
-          animation: fadeIn 0.25s linear;
+  animation: fadeIn 0.25s linear;
 }
 .pageCover .img-box .img {
   display: block;
@@ -3976,17 +3897,6 @@ footer .subscribe-box input[type=submit] {
   color: #ffffff;
 }
 
-@-webkit-keyframes openBox {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
 @keyframes openBox {
   from {
     transform: scale(0);
@@ -4015,8 +3925,7 @@ footer .subscribe-box input[type=submit] {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   transform-origin: bottom right;
-  -webkit-animation: openBox linear 0.2s;
-          animation: openBox linear 0.2s;
+  animation: openBox linear 0.2s;
   min-width: 320px;
   max-width: 360px;
   padding: 1rem;
@@ -4480,8 +4389,8 @@ footer .subscribe-box input[type=submit] {
 }
 @media (max-width: 767px) {
   .event-cover .media img,
-.event-cover .media iframe,
-.event-cover .media embed {
+  .event-cover .media iframe,
+  .event-cover .media embed {
     height: initial;
   }
 }
@@ -5117,8 +5026,7 @@ footer .subscribe-box input[type=submit] {
   height: 15px;
   border-radius: 50%;
   background-color: #9B0E8E;
-  -webkit-animation: fadeIn 1s infinite linear;
-          animation: fadeIn 1s infinite linear;
+  animation: fadeIn 1s infinite linear;
   left: 11px;
   top: 19px;
 }
@@ -5257,8 +5165,7 @@ footer .subscribe-box input[type=submit] {
   height: 15px;
   border-radius: 50%;
   background-color: #9B0E8E;
-  -webkit-animation: fadeIn 1s infinite linear;
-          animation: fadeIn 1s infinite linear;
+  animation: fadeIn 1s infinite linear;
   left: 11px;
   top: 19px;
 }
@@ -5847,7 +5754,6 @@ footer .subscribe-box input[type=submit] {
   align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   margin-right: 10px;
 }
@@ -6203,7 +6109,6 @@ footer .subscribe-box input[type=submit] {
   opacity: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .trial-modal .widget .head .heading {
@@ -6248,7 +6153,6 @@ footer .subscribe-box input[type=submit] {
   margin: 3px 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transition: all 0.2s;
   padding: 6px 10px;
@@ -6309,7 +6213,6 @@ footer .subscribe-box input[type=submit] {
   margin: 3px 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transition: all 0.2s;
   padding: 12px 10px;
@@ -6425,7 +6328,6 @@ footer .subscribe-box input[type=submit] {
   opacity: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -6476,8 +6378,7 @@ footer .subscribe-box input[type=submit] {
   height: 15px;
   border-radius: 50%;
   background-color: #9B0E8E;
-  -webkit-animation: fadeIn 1s infinite linear;
-          animation: fadeIn 1s infinite linear;
+  animation: fadeIn 1s infinite linear;
   left: 11px;
   top: 19px;
 }
@@ -6941,7 +6842,6 @@ footer .subscribe-box input[type=submit] {
   }
 }
 .booking-form .form-header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -6992,7 +6892,6 @@ footer .subscribe-box input[type=submit] {
   outline: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   background-color: transparent;
 }
@@ -7113,7 +7012,6 @@ footer .subscribe-box input[type=submit] {
   margin: 3px 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transition: all 0.2s;
   padding: 12px 10px;
@@ -7427,7 +7325,6 @@ footer .subscribe-box input[type=submit] {
 }
 
 .recent-blog {
-  position: -webkit-sticky;
   position: sticky;
   top: 0px;
 }
@@ -7539,10 +7436,8 @@ footer .subscribe-box input[type=submit] {
 .goals-wrapper .panel .pane {
   display: block;
   padding-bottom: 2rem;
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
 }
 .goals-wrapper .panel .pane .header {
   background-image: url(../img/login_bg.png);
@@ -7929,7 +7824,6 @@ footer .subscribe-box input[type=submit] {
 }
 .franchise-wrapper .franchise-form .f-form .form-fields .form-group .mobile-input .country-code-box .search-country {
   border-bottom: thin solid #ddd;
-  position: -webkit-sticky;
   position: sticky;
   padding: 5px 0;
   top: 0;
@@ -8150,7 +8044,6 @@ footer .subscribe-box input[type=submit] {
   margin: 3px 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transition: all 0.2s;
   padding: 12px 25px;
@@ -8408,7 +8301,6 @@ footer .subscribe-box input[type=submit] {
 }
 .donation-wrapper .donation-form .f-form .form-fields .form-group .mobile-input .country-code-box .search-country, .donation-form .donation-form .f-form .form-fields .form-group .mobile-input .country-code-box .search-country, .donation-done .donation-form .f-form .form-fields .form-group .mobile-input .country-code-box .search-country {
   border-bottom: thin solid #ddd;
-  position: -webkit-sticky;
   position: sticky;
   padding: 5px 0;
   top: 0;
@@ -8677,7 +8569,6 @@ footer .subscribe-box input[type=submit] {
   text-transform: uppercase;
   font-weight: 600;
   box-shadow: 0 1px 2px rgba(155, 14, 142, 0.5);
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -8700,7 +8591,6 @@ footer .subscribe-box input[type=submit] {
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   box-shadow: 0 1px 2px rgba(155, 14, 142, 0.5);
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }

@@ -32,17 +32,6 @@ i {
   cursor: pointer;
 }
 
-@-webkit-keyframes fadeDown {
-  from {
-    opacity: 0;
-    margin-top: -2rem;
-  }
-  to {
-    opacity: 1;
-    margin-top: 1rem;
-  }
-}
-
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -53,16 +42,6 @@ i {
     margin-top: 1rem;
   }
 }
-@-webkit-keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -71,14 +50,6 @@ i {
   to {
     opacity: 1;
     transform: scale(1);
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -129,10 +100,8 @@ i {
   align-items: center;
   justify-content: center;
   overflow: auto;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
   z-index: 1000;
 }
 .blur-overlay .confirmation-box {
@@ -141,10 +110,8 @@ i {
   width: 600px;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
   z-index: 10000;
   padding: 16px 25px;
   text-align: center;
@@ -190,6 +157,8 @@ main .waiting-room .video-wrapper {
   border-radius: 8px;
   display: flex;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 main .waiting-room .video-wrapper video {
   width: 100%;
@@ -229,6 +198,12 @@ main .waiting-room .video-wrapper .action .audio-video-btn .icons {
 }
 main .waiting-room .video-wrapper .action .audio-video-btn .icons:hover {
   background-color: #FF4E00;
+}
+main .waiting-room .video-wrapper .media-message {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
 }
 main .waiting-room .session-info .details {
   border: 1px solid #FF4E00;
@@ -301,11 +276,17 @@ main .waiting-room .session-info .join-buttons .solid-action-btn {
 main .waiting-room .session-info .join-buttons img {
   width: 80px;
 }
+main .waiting-room .session-info small {
+  display: none;
+  justify-content: space-evenly;
+  color: #FF4E00;
+  text-align: center;
+  font-weight: 600;
+}
 main .waiting-room .test-audio {
   display: flex;
   align-items: center;
   border: 1px solid #000;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
@@ -350,12 +331,15 @@ main .classroom .head img {
 main .classroom .head p {
   margin: 5px 0 0 30px;
 }
-main .classroom .classroom-wrapper {
+main .classroom .master-wrapper {
+  position: relative;
+}
+main .classroom .master-wrapper .classroom-wrapper, main .classroom .master-wrapper .mobile-master-screen {
   width: 100%;
-  max-height: 400px;
+  height: 400px;
   background-color: rgba(0, 0, 0, 0.5647058824);
 }
-main .classroom .classroom-wrapper video {
+main .classroom .master-wrapper .classroom-wrapper video, main .classroom .master-wrapper .mobile-master-screen video {
   width: 100%;
   max-height: 400px;
   -o-object-fit: contain;
@@ -363,6 +347,113 @@ main .classroom .classroom-wrapper video {
   -o-object-position: center;
      object-position: center;
   border-radius: 5px;
+}
+main .classroom .master-wrapper .classroom-wrapper img, main .classroom .master-wrapper .mobile-master-screen img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+main .classroom .master-wrapper .classroom-wrapper .option, main .classroom .master-wrapper .mobile-master-screen .option {
+  opacity: 1;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: none;
+}
+main .classroom .master-wrapper .classroom-wrapper .option .opt, main .classroom .master-wrapper .mobile-master-screen .option .opt {
+  background-color: #fff;
+  padding: 3px 6px;
+  border-radius: 50%;
+  margin: auto 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10;
+}
+main .classroom .master-wrapper .classroom-wrapper .option .opt img, main .classroom .master-wrapper .mobile-master-screen .option .opt img {
+  width: 20px;
+  height: 20px;
+}
+main .classroom .master-wrapper .image-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .classroom .master-wrapper .master-screen {
+  position: absolute;
+  background-color: #303030;
+  border-radius: 5px;
+  height: 180px;
+  overflow: hidden;
+  bottom: 2%;
+  right: 2%;
+  width: 200px;
+  cursor: pointer;
+}
+main .classroom .master-wrapper .master-screen img {
+  width: 16px;
+}
+main .classroom .master-wrapper .master-screen .user-img {
+  width: 100%;
+  display: flex;
+}
+main .classroom .master-wrapper .master-screen .user-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 3rem auto 0;
+}
+main .classroom .master-wrapper .master-screen .user-img video {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .classroom .master-wrapper .master-screen .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  position: absolute;
+  bottom: 2%;
+  left: 8px;
+  right: 2px;
+}
+@media (max-width: 820px) {
+  main .classroom .master-wrapper .master-screen {
+    width: 150px;
+  }
+  main .classroom .master-wrapper .master-screen .user-img img {
+    width: 60px;
+    height: 60px;
+  }
+}
+main .classroom .master-wrapper .mobile-master-screen {
+  display: none;
+}
+@media (max-width: 820px) {
+  main .classroom .master-wrapper .classroom-wrapper, main .classroom .master-wrapper .mobile-master-screen {
+    height: 420px;
+  }
+  main .classroom .master-wrapper .mobile-master-screen {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  main .classroom .master-wrapper .classroom-wrapper, main .classroom .master-wrapper .mobile-master-screen {
+    height: 250px;
+  }
+  main .classroom .master-wrapper .mobil-master-screen {
+    display: block;
+  }
 }
 main .classroom .chat-box {
   background-color: #fff;
@@ -383,7 +474,6 @@ main .classroom .chat-box .head p {
 main .classroom .chat-box .head img {
   width: 20px;
   cursor: pointer;
-  display: none;
 }
 main .classroom .chat-box .messages-area {
   height: 295px;
@@ -464,7 +554,7 @@ main .classroom .chat-box .typing-area img {
     display: none;
     height: 260px;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     z-index: 10;
     left: 0;
     right: 0;
@@ -524,6 +614,18 @@ main .classroom .actions .call-end {
 main .classroom .actions .call-end img {
   width: 60px;
 }
+main .classroom .actions #comment-button {
+  position: relative;
+}
+main .classroom .actions #comment-button .unread {
+  position: absolute;
+  background-color: #23C552;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  border-radius: 20px;
+  display: none;
+}
 @media (max-width: 576px) {
   main .classroom .actions {
     bottom: 20px;
@@ -558,7 +660,7 @@ main .classroom .participants-list .participants:hover .option {
   transition: 0.3s ease-in-out;
 }
 main .classroom .participants-list .participants img {
-  width: 16px;
+  width: 18px;
 }
 main .classroom .participants-list .participants .user-img {
   width: 100%;
@@ -611,7 +713,7 @@ main .classroom .participants-list .participants .user-info {
 }
 main .classroom .participants-list .participants .user-info .opt {
   background-color: #007bff;
-  padding: 5px 8px;
+  padding: 2px 5px;
   border-radius: 50%;
   margin: auto 5px;
 }
@@ -636,6 +738,71 @@ main .classroom .participants-list .participants .user-info .opt {
     height: 475px;
   }
 }
+main .classroom .participants-list .col-lg-12, main .classroom .participants-list .col-md-12, main .classroom .participants-list .col-xsm-12, main .classroom .participants-list .col-lg-6, main .classroom .participants-list .col-md-6, main .classroom .participants-list .col-xsm-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .classroom .participants-list .col-lg-12 .participants, main .classroom .participants-list .col-md-12 .participants, main .classroom .participants-list .col-xsm-12 .participants, main .classroom .participants-list .col-lg-6 .participants, main .classroom .participants-list .col-md-6 .participants, main .classroom .participants-list .col-xsm-12 .participants {
+  width: 100%;
+}
+main .classroom .participants-list .col-lg-12 .participants .user-img, main .classroom .participants-list .col-md-12 .participants .user-img, main .classroom .participants-list .col-xsm-12 .participants .user-img, main .classroom .participants-list .col-lg-6 .participants .user-img, main .classroom .participants-list .col-md-6 .participants .user-img, main .classroom .participants-list .col-xsm-12 .participants .user-img {
+  height: 350px;
+  display: flex;
+  width: 100%;
+}
+main .classroom .participants-list .col-lg-12 .participants .user-img video, main .classroom .participants-list .col-md-12 .participants .user-img video, main .classroom .participants-list .col-xsm-12 .participants .user-img video, main .classroom .participants-list .col-lg-6 .participants .user-img video, main .classroom .participants-list .col-md-6 .participants .user-img video, main .classroom .participants-list .col-xsm-12 .participants .user-img video {
+  height: 350px;
+}
+main .classroom .participants-list .col-lg-12 .participants .user-img img, main .classroom .participants-list .col-md-12 .participants .user-img img, main .classroom .participants-list .col-xsm-12 .participants .user-img img, main .classroom .participants-list .col-lg-6 .participants .user-img img, main .classroom .participants-list .col-md-6 .participants .user-img img, main .classroom .participants-list .col-xsm-12 .participants .user-img img {
+  margin: auto;
+}
+main .classroom .participants-list .col-lg-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .classroom .participants-list .col-lg-4 .participants {
+  width: 100%;
+}
+main .classroom .participants-list .col-lg-4 .participants .user-img {
+  height: 200px;
+  display: flex;
+  width: 100%;
+}
+main .classroom .participants-list .col-lg-4 .participants .user-img video {
+  height: 200px;
+}
+main .classroom .participants-list .col-lg-4 .participants .user-img img {
+  margin: auto;
+}
+main .classroom .participants-list .col-lg-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .classroom .participants-list .col-lg-3 .participants {
+  width: 100%;
+}
+main .classroom .participants-list .col-lg-3 .participants .user-img {
+  height: 180px;
+  display: flex;
+  width: 100%;
+}
+main .classroom .participants-list .col-lg-3 .participants .user-img video {
+  height: 180px;
+}
+main .classroom .participants-list .col-lg-3 .participants .user-img img {
+  margin: auto;
+}
+main .classroom .participants-list .no-participant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  font-weight: 500;
+  font-size: 20px;
+}
 @media (max-width: 576px) {
   main .classroom .head {
     font-size: 14px;
@@ -649,5 +816,168 @@ main .classroom .participants-list .participants .user-info .opt {
   }
   main .classroom .actions .items img {
     width: 15px;
+  }
+}
+main .classroom .raiseNotification {
+  padding: 16px 25px;
+  background-color: #464343;
+  box-shadow: 1px 2px 8px 2px rgba(79, 78, 78, 0.16);
+  position: fixed;
+  bottom: 15%;
+  right: 10%;
+  border-radius: 5px;
+  display: none;
+}
+main .session-feedback {
+  padding: 20px 0 90px;
+}
+main .session-feedback .card {
+  padding: 50px 20px;
+  border: none;
+  box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.1882352941);
+  border-radius: 10px;
+  text-align: center;
+}
+main .session-feedback .card .rejoin {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+main .session-feedback .card .rejoin a {
+  color: #FF4E00;
+  border: 1px solid #FF4E00;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin: 0 16px;
+  text-transform: uppercase;
+}
+main .session-feedback .card .rejoin a:hover {
+  background-color: #FF4E00;
+  color: #fff;
+}
+main .session-feedback .card .intro-line {
+  color: #707070;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+main .session-feedback .card h4 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+main .session-feedback .card .course-box .course-banner {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+}
+main .session-feedback .card .course-box .course-banner img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+main .session-feedback .card .course-box .course-info {
+  margin-bottom: 1.5rem;
+}
+main .session-feedback .card .course-box .course-info h6 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+main .session-feedback .card h6 {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+main .session-feedback .card .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 !important;
+}
+main .session-feedback .card .item {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-right: 10px;
+}
+main .session-feedback .card .item img {
+  width: 100% !important;
+}
+main .session-feedback .card .radio {
+  display: none;
+}
+main .session-feedback .card .radio ~ img {
+  font-size: 3rem;
+  filter: grayscale(100);
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .session-feedback .card .radio:checked ~ img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+main .session-feedback .card .form-group {
+  margin-bottom: 1.5rem;
+}
+main .session-feedback .card .bttn {
+  text-align: center;
+  padding: 0 25px;
+}
+main .session-feedback .card .bttn .cta {
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: initial;
+  background-color: #FF4E00;
+  padding: 1rem 1.2rem;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+main .session-feedback .card .bttn .cta img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+main .session-feedback .card .bttn .cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 820px) {
+  main .session-feedback .card .rejoin {
+    flex-direction: column;
+  }
+  main .session-feedback .card .rejoin a {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+}
+@media (max-width: 360px) {
+  main .session-feedback .card .intro-line {
+    font-size: 12px;
+  }
+  main .session-feedback .card h4 {
+    font-size: 16px;
+  }
+  main .session-feedback .card .item {
+    width: 40px;
+    height: 40px;
   }
 }/*# sourceMappingURL=live-player.css.map */
