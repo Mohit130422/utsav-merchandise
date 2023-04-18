@@ -503,6 +503,13 @@ i {
   overflow: hidden;
   cursor: zoom-in;
 }
+@media (max-width: 576px) {
+  .img-border:hover {
+    box-shadow: none;
+    transform: none;
+    overflow: unset;
+  }
+}
 
 main {
   padding: 25px;
@@ -769,7 +776,7 @@ main .product-detail .empty-cart p, main .order-summary .empty-cart p {
     align-items: unset;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   main .product-detail .product-image, main .order-summary .product-image {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -1166,8 +1173,6 @@ main .checkout-form .f-form .form-fields .line {
 @media (max-width: 992px) {
   main .checkout-form .f-form .form-fields .form-group {
     flex-direction: column;
-    align-items: flex-start !important;
-    justify-content: center !important;
   }
   main .checkout-form .f-form .form-fields .form-group input[type=text] {
     margin-left: 0;
@@ -1217,7 +1222,7 @@ main .order-summary .list .product-info .cart-count span {
   font-size: 12px;
 }
 main .order-summary .list .detail {
-  padding: 0.75rem;
+  padding: 0.75rem 0 0.75rem 0.75rem;
   align-items: center;
 }
 main .order-summary .list .total {

@@ -512,6 +512,13 @@ i{
         overflow: hidden;
         cursor: zoom-in;
     }
+    @media(max-width:576px){
+        &:hover{
+            box-shadow: none;
+            transform: none;
+            overflow: unset;
+        }
+    }
 }
 
 main{
@@ -792,7 +799,7 @@ main{
                 }
             }
         }
-        @media(max-width:768px){
+        @media(max-width:576px){
             .product-image{
                 flex-wrap: nowrap;
                 overflow-x: scroll;
@@ -1190,8 +1197,8 @@ main{
                 @media (max-width:992px) {
                     .form-group{
                         flex-direction: column;
-                        align-items: flex-start !important;
-                        justify-content: center !important;
+                        // align-items: flex-start !important;
+                        // justify-content: center !important;
                         input[type='text']{
                             margin-left: 0;
                         }
@@ -1248,7 +1255,7 @@ main{
                 }
             }
             .detail{
-                padding: .75rem;
+                padding: .75rem 0 .75rem .75rem;
                 align-items: center;
             }
             .total{
