@@ -35,4 +35,11 @@ $(document).ready(function () {
             $("#alertMessage").fadeOut();
         }, 2000);
     }); 
+
+    $('#update').click(function() {
+        $('.count').html(function(i, val) { return val*1+1 });
+    });
+    $('#minus').click(function() {
+        $('.count').html(function(i, val) { return val*1-1 });
+    });
 });
