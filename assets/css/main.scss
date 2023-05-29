@@ -903,6 +903,25 @@ main{
             font-size: 25px;
             font-weight: 600;
         }
+        .mid-section{
+            position: relative;
+            text-align: center;
+            margin: 1rem auto;
+            span{
+                position: absolute;
+                left: 0;
+                right: 0;
+                display: inline-table;
+                padding: 0 16px;
+                top: 0;
+                bottom: 0;
+                font-size: 20px;
+                font-weight: bold;
+                margin: auto;
+                background-color: #fff;
+                text-transform: uppercase;
+            }
+        }
         .radio{
             display: inline-flex;
             align-items: center;
@@ -943,6 +962,16 @@ main{
             .user-info{
                 font-weight: 500;
             }
+            .saved{
+                display: flex;
+                justify-content: space-between;
+                .edit{
+                    a{
+                        color: $primary-color;
+                        margin: auto 8px;
+                    }
+                }
+            }
             &:hover{
                 box-shadow: 0 0 5px #00000032;
                 transform: scaleY(1);
@@ -964,6 +993,11 @@ main{
         @media(max-width: 768px){
             .add-address{
                 width: 100%;
+            }
+            .mid-section{
+                span{
+                    font-size: 12px;
+                }
             }
         }
     }

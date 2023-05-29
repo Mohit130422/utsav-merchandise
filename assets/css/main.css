@@ -878,6 +878,25 @@ main .checkout-detail .head, main .shipping-method .head {
   font-size: 25px;
   font-weight: 600;
 }
+main .checkout-detail .mid-section, main .shipping-method .mid-section {
+  position: relative;
+  text-align: center;
+  margin: 1rem auto;
+}
+main .checkout-detail .mid-section span, main .shipping-method .mid-section span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: inline-table;
+  padding: 0 16px;
+  top: 0;
+  bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+  background-color: #fff;
+  text-transform: uppercase;
+}
 main .checkout-detail .radio, main .shipping-method .radio {
   display: inline-flex;
   align-items: center;
@@ -919,6 +938,14 @@ main .checkout-detail .pricing, main .shipping-method .pricing {
 main .checkout-detail .pricing .user-info, main .shipping-method .pricing .user-info {
   font-weight: 500;
 }
+main .checkout-detail .pricing .saved, main .shipping-method .pricing .saved {
+  display: flex;
+  justify-content: space-between;
+}
+main .checkout-detail .pricing .saved .edit a, main .shipping-method .pricing .saved .edit a {
+  color: #FF4E00;
+  margin: auto 8px;
+}
 main .checkout-detail .pricing:hover, main .shipping-method .pricing:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1960784314);
   transform: scaleY(1);
@@ -939,6 +966,9 @@ main .checkout-detail .add-address, main .shipping-method .add-address {
 @media (max-width: 768px) {
   main .checkout-detail .add-address, main .shipping-method .add-address {
     width: 100%;
+  }
+  main .checkout-detail .mid-section span, main .shipping-method .mid-section span {
+    font-size: 12px;
   }
 }
 main .checkout-form .head {
