@@ -707,4 +707,49 @@ footer .subscribe-box input[type=submit] {
   .add-links {
     margin-bottom: 4rem;
   }
+}
+
+.floatingPane2 {
+  position: fixed;
+  z-index: 1000;
+  bottom: 2rem;
+  left: 2rem;
+}
+.floatingPane2 .surveyBox {
+  max-width: 380px;
+  max-height: 144px;
+  background-color: white;
+  box-shadow: 4px 6px 13px rgba(0, 0, 0, 0.2078431373);
+  border-radius: 6px;
+  padding: 20px 16px;
+}
+.floatingPane2 .surveyBox .surveymssg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floatingPane2 .surveyBox .surveymssg .surveyclose {
+  cursor: pointer;
+}
+.floatingPane2 .surveyBox .surveymssg p {
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 0px 16px;
+}
+.floatingPane2 .surveyBox .sub-mssg {
+  font-size: 14px;
+  margin: 10px 0px 0px 57px;
+}
+.floatingPane2 .surveyBox .survey-link {
+  color: #9B0E8E;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .floatingPane2 {
+    bottom: 8rem;
+    right: 2rem;
+  }
+  .floatingPane2 .surveyBox {
+    max-height: 160px;
+  }
 }/*# sourceMappingURL=header_footer.css.map */

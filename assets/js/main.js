@@ -42,4 +42,22 @@ $(document).ready(function () {
     $('#minus').click(function() {
         $('.count').html(function(i, val) { return val*1-1 });
     });
+    $('#product-img-mob').owlCarousel({
+        loop: false,
+        margin: 16,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
 });
