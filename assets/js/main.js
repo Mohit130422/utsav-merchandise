@@ -60,4 +60,25 @@ $(document).ready(function () {
             }
         }
     });
+    $('#merchandise-slide').owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        dots:true,
+        lazyLoad:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:4,
+                dots:false
+            }
+        }
+    })
 });

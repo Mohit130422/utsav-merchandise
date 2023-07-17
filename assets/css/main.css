@@ -87,7 +87,7 @@ i {
 
 .solid-action-btn-new {
   background-color: #FF4E00;
-  padding: 8px 180px;
+  padding: 8px 24px;
   font-size: 12px;
   font-weight: 700;
   border-radius: 40px;
@@ -96,26 +96,29 @@ i {
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .outline-action-btn-new {
   color: #FF4E00;
-  padding: 8px 180px;
+  padding: 8px 24px;
   background-color: transparent;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   border-radius: 20px;
   border: 1px solid #FF4E00;
+  width: 100%;
 }
 
 .outline-action-btn {
   color: #FF4E00;
-  padding: 12px 8px;
+  padding: 8px 24px;
   background-color: transparent;
   font-size: 15px;
   font-weight: 700;
   border-radius: 40px;
   border: 1px solid #FF4E00;
+  width: 100%;
 }
 
 .section-name {
@@ -670,16 +673,16 @@ main .card .img-wrapper {
   position: relative;
   cursor: pointer;
   width: 100%;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 main .card .img-wrapper img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: unset;
+     object-fit: unset;
   height: 100%;
-  -o-object-position: center top;
-     object-position: center top;
+  -o-object-position: center;
+     object-position: center;
 }
 main .card .img-wrapper::before {
   content: "";
@@ -731,6 +734,62 @@ main .card .card-body .card-text {
     display: none;
   }
 }
+main .owl-carousel .owl-item {
+  margin-bottom: 16px;
+}
+main .owl-carousel .owl-nav .owl-prev {
+  left: -30px;
+  padding: 20px;
+}
+main .owl-carousel .owl-nav .owl-next {
+  right: -30px;
+}
+main .owl-carousel .owl-nav .owl-prev, main .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  border: 1px solid #a09e9e;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1882352941);
+}
+main .owl-carousel .owl-nav .owl-prev span, main .owl-carousel .owl-nav .owl-next span {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+}
+main .owl-carousel .owl-nav .owl-prev:hover, main .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #a09e9e;
+}
+@media (max-width: 576px) {
+  main .owl-carousel .owl-nav .owl-prev {
+    left: -16px;
+    padding: 20px;
+  }
+  main .owl-carousel .owl-nav .owl-next {
+    right: -16px;
+  }
+}
+main .owl-carousel .owl-dots {
+  position: relative;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+main .owl-carousel .owl-dots .owl-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #9B0E8E;
+  margin: 0 0.5rem;
+  opacity: 0.5;
+  outline: none;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+main .owl-carousel .owl-dots .active {
+  opacity: 1;
+  width: 16px;
+}
 main .product-detail, main .order-summary {
   position: relative;
 }
@@ -754,6 +813,16 @@ main .product-detail .product-info, main .order-summary .product-info {
 main .product-detail .product-info p, main .order-summary .product-info p {
   font-weight: 600;
   font-size: 18px;
+}
+main .product-detail .product-info p s, main .order-summary .product-info p s {
+  color: #adadad;
+  font-size: 14px;
+  margin-left: 5px;
+}
+main .product-detail .product-info p small, main .order-summary .product-info p small {
+  color: #388e3c;
+  font-size: 14px;
+  font-weight: 600;
 }
 main .product-detail .product-info .color-opt, main .order-summary .product-info .color-opt {
   margin-left: 1rem;
@@ -929,13 +998,15 @@ main .product-detail .add-note textarea:focus-visible, main .order-summary .add-
   }
 }
 main .product-detail .checkout, main .order-summary .checkout {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  background-color: #FFD4FB;
+  background-color: #fff;
   width: 100%;
   padding: 20px;
   left: 0;
   right: 0;
+  z-index: 100;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.08);
 }
 main .product-detail .checkout p, main .order-summary .checkout p {
   font-size: 20px;
@@ -1116,7 +1187,6 @@ main .checkout-detail .mid-section span, main .shipping-method .mid-section span
 }
 main .checkout-detail .radio, main .shipping-method .radio {
   display: inline-flex;
-  align-items: center;
   cursor: pointer;
   font-size: 16px;
 }
@@ -1169,8 +1239,6 @@ main .checkout-detail .pricing:hover, main .shipping-method .pricing:hover {
 }
 main .checkout-detail .ship-info, main .shipping-method .ship-info {
   font-weight: 500;
-  display: grid;
-  grid-template-columns: 250px 80px;
 }
 main .checkout-detail .add-address, main .shipping-method .add-address {
   color: #2874F0;
@@ -1187,12 +1255,25 @@ main .checkout-detail .add-address, main .shipping-method .add-address {
   main .checkout-detail .mid-section span, main .shipping-method .mid-section span {
     font-size: 12px;
   }
+  main .checkout-detail .ship-info, main .shipping-method .ship-info {
+    grid-template-columns: 190px auto;
+  }
 }
 main .shipping-method {
   padding-bottom: 25px;
 }
 main .shipping-method .head {
   font-size: 18px;
+}
+@media (max-width: 991px) {
+  main .shipping-method {
+    margin-top: 2rem;
+  }
+}
+main .ship-checkout p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 16px 0 0;
 }
 main .checkout-form .head {
   font-size: 20px;
@@ -1508,6 +1589,9 @@ main .order-summary .list .solid-action-btn {
 @media (max-width: 991px) {
   main .order-summary .list .solid-action-btn {
     width: 100%;
+  }
+  main .order-summary .list .detail .price {
+    text-align: right;
   }
 }
 

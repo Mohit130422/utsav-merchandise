@@ -96,7 +96,7 @@ i{
 }
  .solid-action-btn-new{
     background-color: $primary-color;
-    padding: 8px 180px;
+    padding: 8px 24px;
     font-size: 12px;
     font-weight: 700;
     border-radius: 40px;
@@ -105,26 +105,29 @@ i{
     color: $light-color;
     cursor: pointer;
     text-transform: uppercase;
+    width:100%
 }
 
 
 .outline-action-btn-new{
     color: $primary-color;
-    padding: 8px 180px;
+    padding: 8px 24px;
     background-color: transparent;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     border-radius: 20px;
     border: 1px solid $primary-color;
+    width: 100%;
 }
 .outline-action-btn{
     color: $primary-color;
-    padding: 12px 8px;
+    padding: 8px 24px;
     background-color: transparent;
     font-size: 15px;
     font-weight: 700;
     border-radius: 40px;
     border: 1px solid $primary-color;
+    width: 100%;
 }
 .section-name{
     font-size: 20px;
@@ -657,7 +660,6 @@ main{
     }
     .card{
         margin-top: 2rem;
-        // max-height: 350px;
         box-shadow: 2px 2px 16px rgb(0 0 0/11%);
         border-radius: .5rem;
         &:hover{
@@ -685,13 +687,13 @@ main{
             position: relative;
             cursor: pointer;
             width: 100%;
-            height: 300px;
+            height: 250px;
             overflow: hidden;
             img{
                 width: 100%;
-                object-fit: contain;
+                object-fit: unset;
                 height: 100%;
-                object-position: center top;
+                object-position: center;
             }
             &::before{
                 content: "";
@@ -747,6 +749,67 @@ main{
             }
         }
     }
+    .owl-carousel{
+        .owl-item{
+            margin-bottom: 16px;
+        }
+        .owl-nav{
+            .owl-prev{
+                left: -30px;
+                padding: 20px;
+            }
+            .owl-next{
+                right: -30px;
+            }
+            .owl-prev,.owl-next{
+                position: absolute;
+                top: 40%;
+                border-radius: 50%;
+                border: 1px solid #a09e9e;
+                width: 40px;
+                height: 40px;
+                background-color: #ffff;
+                box-shadow: 2px 2px 16px #00000030;
+                span{
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 1;
+        
+                }
+                &:hover{
+                    background-color: #a09e9e;
+                }
+            }
+            @media (max-width:576px){
+                .owl-prev{
+                    left: -16px;
+                    padding: 20px;
+                }
+                .owl-next{
+                    right: -16px;
+                }
+            }
+        }
+        .owl-dots {
+            position: relative;
+            text-align: center;
+            margin-top: 0.5rem;
+            .owl-dot {
+                height: 8px;
+                width: 8px;
+                background-color: $secondary-color;
+                margin: 0 .5rem;
+                opacity: .5;
+                outline: none;
+                border-radius: 100px;
+                transition: all .2s ease-in-out;
+            }
+            .active {
+                opacity: 1;
+                width: 16px;
+            }
+        }
+    }
     .product-detail, .order-summary{
         position: relative;
         .product-image{
@@ -769,6 +832,16 @@ main{
             p{
                 font-weight: 600;
                 font-size: 18px;
+                s{
+                    color: #adadad;
+                    font-size: 14px;
+                    margin-left: 5px;
+                }
+                small{
+                    color:#388e3c;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
             }
             .color-opt{
                 margin-left: 1rem;
@@ -953,13 +1026,15 @@ main{
             }
         }
         .checkout{
-            position: absolute;
+            position: fixed;
             bottom: 0;
-            background-color: $secondary-light-color;
+            background-color: #fff;
             width: 100%;
             padding: 20px;
             left: 0;
             right: 0;
+            z-index: 100;
+            box-shadow: 0 0px 8px rgba(0, 0, 0, 0.08);
             p{
                 font-size: 20px;
                 color: $secondary-color2;
@@ -1164,7 +1239,7 @@ main{
         }
         .radio{
             display: inline-flex;
-            align-items: center;
+            // align-items: center;
             cursor: pointer;
             font-size: 16px;
             .radio-input{
@@ -1219,8 +1294,6 @@ main{
         }
         .ship-info{
             font-weight: 500;
-            display: grid;
-            grid-template-columns: 250px 80px;
         }
         .add-address{
             color: #2874F0;
@@ -1239,12 +1312,25 @@ main{
                     font-size: 12px;
                 }
             }
+            .ship-info{
+                grid-template-columns: 190px auto;
+            }
         }
     }
     .shipping-method{
         padding-bottom: 25px;
         .head{
             font-size: 18px;
+        }
+        @media(max-width: 991px){
+            margin-top: 2rem;
+        }
+    }
+    .ship-checkout{
+        p{
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 16px 0 0;
         }
     }
     .checkout-form{
@@ -1566,6 +1652,11 @@ main{
             @media(max-width:991px){
                 .solid-action-btn{
                     width: 100%;
+                }
+                .detail{
+                    .price{
+                        text-align: right;
+                    }
                 }
             }
         }
