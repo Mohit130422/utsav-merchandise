@@ -261,10 +261,10 @@
                 <div class="row bottom-border">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="product-image">
-                            <img src="assets/images/01.png" class="img-border" alt="">
-                            <img src="assets/images/02.png" class="img-border" alt="">
-                            <img src="assets/images/03.png" class="img-border" alt="">
-                            <img src="assets/images/04.png" class="img-border" alt="">                            
+                            <img src="assets/images/01.png" class="img-border" alt="" id="img1">
+                            <img src="assets/images/02.png" class="img-border" alt="" id="img2">
+                            <img src="assets/images/03.png" class="img-border" alt="" id="img3">
+                            <img src="assets/images/04.png" class="img-border" alt="" id="img4">                            
                         </div>
                     </div>
                     <div class="owl-carousel owl-loaded owl-drag" id="product-img-mob">
@@ -489,7 +489,30 @@
             <a class="link" href="">Code of Conduct</a>
         </div>
     </div>
-  
+    
+    <div class="img-overlay" id="img-box">
+        <div class="image-box">   
+            <div class="heading">
+                <button class="btnCloseDialog" onclick="$('#img-box').hide()">
+                    <img src="https://www.utsavyoga.com/node_modules/bootstrap-icons/icons/x.svg" alt="">
+                </button>
+            </div>
+            <div class="image-gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <div class="owl-carousel" id="zoom-img-carousel">
+                                <img src="assets/images/01.png" alt="">
+                                <img src="assets/images/02.png" alt="">
+                                <img src="assets/images/03.png" alt="">
+                                <img src="assets/images/04.png" alt="">        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/main.js"></script>
     <script>

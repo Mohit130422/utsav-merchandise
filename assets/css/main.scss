@@ -529,6 +529,91 @@ i{
         }
     }
 }
+
+.img-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    z-index: 1000;
+    display: none;
+    .image-box{
+        width: 95%;
+        height: 95vh;
+        // background: #fff;
+        overflow: hidden;
+        padding: 2rem;
+        position: relative;
+        .heading{
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            button{
+                border: none;
+                img{
+                    width: 30px;
+                    height: 35px;
+                }
+            }
+        }
+        .owl-carousel{
+            width: 400px;
+            .owl-nav{
+                display: block;
+                .owl-prev{
+                    left: -30px;
+                    padding: 20px;
+                }
+                .owl-next{
+                    right: -30px;
+                }
+                .owl-prev,.owl-next{
+                    position: absolute;
+                    top: 40%;
+                    span{
+                        font-size: 75px;
+                        font-weight: 600;
+                        line-height: 1;
+                        color: #fff;   
+                        &:hover{
+                            color: #a09e9e;
+                        }         
+                    }
+                    
+                }
+                @media (max-width:576px){
+                    .owl-prev{
+                        left: -16px;
+                        padding: 20px;
+                    }
+                    .owl-next{
+                        right: -16px;
+                    }
+                }
+            }
+            .owl-item{
+                width: 400px !important;
+                height: 550px;
+                overflow: hidden;
+                img{
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}
+
 .img-border{
     &:hover{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -1661,76 +1746,5 @@ main{
             }
         }
 
-    }
-}
-.blur-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-    animation-name: fadeIn;
-    animation-duration: 0.3s;
-    z-index: 1000;
-    display: none;
-    .dialog-box {
-        margin: auto;
-        background-color: #ffffff;
-        box-shadow: 0 8px 32px rgb(0 0 0 / 32%);
-        overflow: hidden;
-        border-radius: 8px;
-        width: 500px;
-        height: 350px;
-        animation-name: fadeUp;
-        animation-duration: 0.5s;
-        .heading{
-            height: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 30px 17px;
-            .btnCloseDialog{
-                background-color: #EDF2FE;
-                border: none;
-                padding: .5rem;
-                outline: none;
-                transition: all 0.3s ease;
-                img{
-                    height: 24px;
-                     width: 24px;
-                     opacity: 0.5;
-                }
-            }
-        }
-        .body{
-            min-height: 200px;
-            max-height: auto;
-            overflow: auto;
-            padding: 1rem;
-            text-align: center;
-            position: relative;
-            display: block;
-            h4{
-                font-size: 30px;
-                font-weight: 600;
-                color: $secondary-color2;
-            }
-            span{
-                font-weight: 500;
-                font-size: 16px;
-            }
-        }
-        .footer{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 56px;
-            padding: 0 1rem;
-        }
     }
 }

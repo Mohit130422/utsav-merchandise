@@ -42,11 +42,15 @@ $(document).ready(function () {
     $('#minus').click(function() {
         $('.count').html(function(i, val) { return val*1-1 });
     });
+
+    $('.img-border').click(function(){
+        $("#img-box").css("display","flex");
+    });
     $('#product-img-mob').owlCarousel({
         loop: false,
         margin: 16,
-        dots: true,
-        nav: false,
+        dots: false,
+        nav: true,
         responsive: {
             0: {
                 items: 1
@@ -57,6 +61,24 @@ $(document).ready(function () {
             },
             1000: {
                 items: 3
+            }
+        }
+    });
+    $('#zoom-img-carousel').owlCarousel({
+        loop: false,
+        margin: 16,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+
+            },
+            1000: {
+                items: 1
             }
         }
     });
