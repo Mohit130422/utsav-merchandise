@@ -49,8 +49,8 @@ $(document).ready(function () {
     $('#product-img-mob').owlCarousel({
         loop: false,
         margin: 16,
-        dots: false,
-        nav: true,
+        dots: true,
+        nav: false,
         responsive: {
             0: {
                 items: 1

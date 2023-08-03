@@ -603,7 +603,7 @@ i{
                 width: 400px !important;
                 height: 550px;
                 overflow: hidden;
-                img{
+                img,video{
                     object-fit: contain;
                     width: 100%;
                     height: 100%;
@@ -902,10 +902,61 @@ main{
             padding: 16px;
             display: flex;
             flex-wrap: wrap;
-            img{
+            img,video{
                 width: 49%;
                 margin: 2px;
-                border-radius: 5px
+                border-radius: 8px
+                
+            }
+            video{
+                &::-webkit-media-controls-volume-slider-container{
+                    display: none;
+                }
+                &::-webkit-media-controls-volume-slider{
+                    display: none;
+                }
+                &::-webkit-media-controls-mute-button{
+                    display: none;
+                }
+                &::-webkit-media-controls-timeline{
+                    display: none;
+                }
+                &::-webkit-media-controls-current-time-display{
+                    display: none;
+                }
+                &::-webkit-full-page-media::-webkit-media-controls-panel{
+                    display: none;
+                }
+                &::-webkit-media-controls-timeline-container{
+                    display: none;
+                }
+                &::-webkit-media-controls-time-remaining-display{
+                    display: none;
+                }
+                &::-webkit-media-controls-seek-back-button{
+                    display: none;
+                }
+                &::-webkit-media-controls-seek-forward-button{
+                    display: none;
+                }
+                &::-webkit-media-controls-rewind-button{
+                    display: none;
+                }
+                &::-webkit-media-controls-return-to-realtime-button{
+                    display: none;
+                }
+                &::-webkit-media-controls-toggle-closed-captions-button{
+                    display: none;
+                }
+                &::-internal-media-controls-download-button {
+                    display:none;
+                }
+                &::-webkit-media-controls-enclosure {
+                    overflow:hidden;
+                }
+                &::-webkit-media-controls-panel {
+                    width: calc(100% + 30px); 
+                }
             }
         }
         .owl-carousel{
@@ -1145,7 +1196,7 @@ main{
         }
         @media(max-width:991px){
             .product-image{
-                img{
+                img,video{
                     width: 100%;
                 }
             }
@@ -1158,25 +1209,13 @@ main{
         }
         @media(max-width:576px){
             .product-image{
-                // flex-wrap: nowrap;
-                // overflow-x: scroll;
-                // scroll-snap-type: x mandatory;
-                // &::-webkit-scrollbar{
-                //     height: 3.5px;
-                // }            
-                // &::-webkit-scrollbar-thumb {
-                //     background: $primary-color; 
-                //     border-radius: 5px;
-                //   }
-                // img{
-                //     width: 100%;
-                //     flex: 1;
-                //     scroll-snap-align: start;
-                // }
                 display: none;
             }
             .owl-carousel{
                 display: block;
+                .owl-nav{
+                    display: none;
+                }
                 .owl-dots {
                     position: relative;
                     text-align: center;
@@ -1194,6 +1233,61 @@ main{
                     .active {
                         opacity: 1;
                         width: 16px;
+                    }
+                }
+                .owl-item{
+                    video{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        &::-webkit-media-controls-volume-slider-container{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-volume-slider{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-mute-button{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-timeline{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-current-time-display{
+                                display: none;
+                        }
+                        &::-webkit-full-page-media::-webkit-media-controls-panel{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-timeline-container{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-time-remaining-display{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-seek-back-button{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-seek-forward-button{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-rewind-button{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-return-to-realtime-button{
+                                display: none;
+                        }
+                        &::-webkit-media-controls-toggle-closed-captions-button{
+                                display: none;
+                        }
+                        &::-internal-media-controls-download-button {
+                                display:none;
+                        }
+                        &::-webkit-media-controls-enclosure {
+                                overflow:hidden;
+                        }
+                        &::-webkit-media-controls-panel {
+                                width: calc(100% + 30px); 
+                        }
                     }
                 }
             }
