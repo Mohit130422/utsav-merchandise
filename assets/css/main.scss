@@ -11,6 +11,7 @@ $card-grad-color-1: #F3DDFC;
 $card-grad-color-2: #E0EAFF;
 $card-grad2-color-1:#FCF9C9;
 $card-grad2-color-2:#FFDAC8;
+$color_2: #457b9d;
 
 
 
@@ -1841,4 +1842,166 @@ main{
         }
 
     }
+
+    .lp-unsingle-hero {
+	    padding: 40px 0;
+	    background: #f8f9fa;
+        .row{
+            align-items: center;
+        }
+	    h1 {
+	    	font-size: 60px;
+            font-weight: 700;
+	    	margin-bottom: 15px;
+            strike{
+                color: $secondary-color;
+            }
+	    }
+        .tagline {
+            font-size: 32px;
+            font-weight: 700;
+            color: #5D5C5C;
+            margin-bottom: 20px;
+        }
+        .solid-action-btn{
+            background-color: $secondary-color;
+            border: none;
+            width: 30%;
+            padding: 12px 24px;
+        }
+        .imgDesk{
+            width: 100%;
+        }
+    }
+    .join-fyb-cafe{
+        background-image: url('../images/join-fyb-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container{
+            height: 100%;
+        }
+        .content {
+            position: relative;
+            text-align: center;
+            color: $light-color;
+            .image-gallery {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin-bottom: 20px;
+                img {
+                    width: 350px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+            .solid-action-btn {
+                background: $secondary-color;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                font-size: 18px;
+                border-radius: 25px;
+                cursor: pointer;
+                text-transform: capitalize;
+            }
+            .description {
+                margin-top: 20px;
+                font-size: 25px;
+                line-height: 1.5;
+            }
+        }
+    }
+    .why-unsingle {
+        height: 100vh;
+        background-image: url('../images/why-unsingle.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    	padding: 30px 0;
+        .content{
+            text-align: center;
+            font-weight: 500;
+            padding: 0 30px;
+            p{
+                font-size: 30px;
+            }
+            .highlight{
+                color: $secondary-color;
+                font-weight: 700;
+                font-size: 40px;
+            }
+            .solid-action-btn{
+                background-color: $secondary-color;
+                margin-top: 20px;
+                border-color: $secondary-color;
+                font-size: 20px;
+                text-transform: unset;
+            }
+        }
+    }
+    .highlight {
+    	color: $primary-color;
+    	font-size: 2rem;
+    	margin: 20px 0;
+    }
+    .button {
+    	display: inline-block;
+    	padding: 12px 30px;
+    	background: #e63946;
+    	color: $light-color;
+    	text-decoration: none;
+    	border-radius: 25px;
+    	margin: 20px 0;
+    	transition: background 0.3s;
+    	&:hover {
+    		background: #d62828;
+    	}
+    }
+    .features-list {
+    	list-style: none;
+    	margin: 20px 0;
+    	li {
+    		margin: 15px 0;
+    		padding-left: 25px;
+    		position: relative;
+    		&:before {
+    			content: "•";
+    			color: $primary-color;
+    			position: absolute;
+    			left: 0;
+    			font-size: 1.2em;
+    		}
+    	}
+    }
+    .event-dates {
+    	display: flex;
+    	gap: 30px;
+    	margin: 30px 0;
+    }
+    .date-card {
+    	flex: 1;
+    	padding: 20px;
+    	border: 2px solid #eee;
+    	border-radius: 10px;
+    }
+    footer {
+    	background: #f8f9fa;
+    	padding: 30px 0;
+    	text-align: center;
+    }
+    .two-column {
+    	display: grid;
+    	grid-template-columns: 1fr 1fr;
+    	gap: 40px;
+    	align-items: center;
+    }
+    @media (max-width: 768px) {
+    	.two-column {
+    		grid-template-columns: 1fr;
+    	}
+    	.event-dates {
+    		flex-direction: column;
+    	}
+    }
+
 }
