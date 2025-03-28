@@ -1872,6 +1872,15 @@ main{
         .imgDesk{
             width: 100%;
         }
+        @media(max-width: 576px){
+            text-align: center;
+            h1{
+                font-size: 40px;
+            }
+            .solid-action-btn{
+                width: 50%;
+            }
+        }
     }
     .join-fyb-cafe{
         background-image: url('../images/join-fyb-bg.png');
@@ -1911,9 +1920,16 @@ main{
                 line-height: 1.5;
             }
         }
+        @media(max-width: 576px){
+            .content{
+                .image-gallery{
+                    flex-wrap: wrap;
+                }
+            }
+        }
     }
     .why-unsingle {
-        height: 100vh;
+        height: 80vh;
         background-image: url('../images/why-unsingle.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -1938,26 +1954,44 @@ main{
                 text-transform: unset;
             }
         }
+        @media(max-width:576px){
+            height: auto;
+            .content{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
     }
     .event-section {
-        padding: 40px;
+        padding: 50px 0;
         background: url('../images/join-fyb-bg.png') no-repeat center center/cover;
         .content {
             .info-box { 
-                .highlight {
+                margin-bottom: 40px;
+                .highlight1, .highlight2{
                     background: white;
                     padding: 20px;
                     font-weight: bold;
                     font-size: 32px;
                     margin-bottom: 16px;
-                    border-radius: 10px 10px 0 0;
+                }
+                .highlight1{
+                    border-radius: 12px 12px 0 0;
+                }
+                .highlight2{
+                    border-radius: 0 12px 12px 12px;
                 }
                 ul {
                     list-style: none;
                     padding: 0;
                     li {
-                        font-size: 18px;
-                        color: #333;
+                        font-size: 30px;
+                        font-weight: 600;
+                        background: #FF4E00;
+                        background: linear-gradient(to right, #FF4E00 0%, #FFFFFF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                         margin-bottom: 10px;
                         .bullet {
                             color: #ff7f50;
@@ -1980,11 +2014,148 @@ main{
                 width: 100%;
                 border-radius: 10px;
             }
-            .profile-info h2 {
-                margin: 10px 0 5px;
-                font-size: 30px;
-                font-weight: 600;
+            .profile-info{
+                p{
+                    padding: 0 0 12px;
+                }
+                h2 {
+                    margin: 10px 0 5px;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+        @media(max-width:576px){
+            height: auto;
+            .content{
+                .info-box{
+                    .highlight{
+                        font-size: 20px;
+                    }
+                    ul li{
+                        font-size: 18px;
+                    }
+                }
             }
         }
     }    
+    .unsingle-theory{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        background-image: url('../images/fyb-bg.png');
+        .content{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 600;
+            .highlight{
+                font-size: 25px;
+            }
+            ul{
+                li{
+                    line-height: 2.5;
+                }
+            }
+            p{
+                font-size: 25px;
+                color: #5D5C5C;
+            }
+        }
+        @media(max-width:576px){
+            height: auto;
+            .content{
+                font-size: 20px;
+                .info-box{
+                    .highlight{
+                        font-size: 20px;
+                    }
+                }
+                ul{
+                    padding-left: 16px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .book-your-spot{
+        background:  url('../images/book-your-spot.png') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        .container {
+            width: 80%;
+            .details {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 20px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    font-size: 25px;
+                    .book-btn {
+                        background: #FF5722;
+                        color: white;
+                        padding: 8px 15px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .location {
+                background: rgba(255, 255, 255, 0.3);
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+            .cta-button {
+                background: #9C27B0;
+                color: white;
+                padding: 12px;
+                font-size: 25px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            small{
+                display: block;
+            }
+        }
+        @media(max-width: 576px){
+            height: auto;
+            .container {
+                width: 100%;
+                .details {
+                    div{
+                        font-size: 20px;
+                        flex-direction: column;
+                        .book-btn{
+                            width: 50%;
+                            margin-top: 16px;
+                        }
+                    }
+                }
+                .location{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
 }
