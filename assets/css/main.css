@@ -1796,9 +1796,6 @@ main .lp-unsingle-hero h1 {
   font-weight: 700;
   margin-bottom: 15px;
 }
-main .lp-unsingle-hero h1 strike {
-  color: #9B0E8E;
-}
 main .lp-unsingle-hero .tagline {
   font-size: 32px;
   font-weight: 700;
@@ -1870,7 +1867,6 @@ main .join-fyb-cafe .content .description {
   }
 }
 main .why-unsingle {
-  height: 80vh;
   background-image: url("../images/why-unsingle.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1887,7 +1883,7 @@ main .why-unsingle .content p {
 main .why-unsingle .content .highlight {
   color: #9B0E8E;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 60px;
 }
 main .why-unsingle .content .solid-action-btn {
   background-color: #9B0E8E;
@@ -1898,7 +1894,11 @@ main .why-unsingle .content .solid-action-btn {
 }
 @media (max-width: 576px) {
   main .why-unsingle {
+    background-image: none;
     height: auto;
+  }
+  main .why-unsingle .content {
+    padding: 0;
   }
   main .why-unsingle .content p {
     font-size: 20px;
@@ -1967,11 +1967,11 @@ main .event-section .profile .profile-info h2 {
   main .event-section {
     height: auto;
   }
-  main .event-section .content .info-box .highlight {
-    font-size: 20px;
+  main .event-section .content .info-box .highlight1, main .event-section .content .info-box .highlight2 {
+    font-size: 18px;
   }
   main .event-section .content .info-box ul li {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 main .unsingle-theory {

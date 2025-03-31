@@ -1853,9 +1853,6 @@ main{
 	    	font-size: 60px;
             font-weight: 700;
 	    	margin-bottom: 15px;
-            strike{
-                color: $secondary-color;
-            }
 	    }
         .tagline {
             font-size: 32px;
@@ -1929,7 +1926,6 @@ main{
         }
     }
     .why-unsingle {
-        height: 80vh;
         background-image: url('../images/why-unsingle.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -1944,7 +1940,7 @@ main{
             .highlight{
                 color: $secondary-color;
                 font-weight: 700;
-                font-size: 40px;
+                font-size: 60px;
             }
             .solid-action-btn{
                 background-color: $secondary-color;
@@ -1955,8 +1951,10 @@ main{
             }
         }
         @media(max-width:576px){
+            background-image: none;
             height: auto;
             .content{
+                padding: 0;
                 p{
                     font-size: 20px;
                 }
@@ -2029,11 +2027,11 @@ main{
             height: auto;
             .content{
                 .info-box{
-                    .highlight{
-                        font-size: 20px;
+                    .highlight1, .highlight2{
+                        font-size: 18px;
                     }
                     ul li{
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
