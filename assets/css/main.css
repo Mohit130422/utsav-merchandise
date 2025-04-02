@@ -1869,7 +1869,7 @@ main .join-fyb-cafe .content .description {
 main .why-unsingle {
   background-image: url("../images/why-unsingle.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding: 30px 0;
 }
 main .why-unsingle .content {
