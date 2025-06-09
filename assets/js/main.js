@@ -64,6 +64,24 @@ $(document).ready(function () {
             }
         }
     });
+    $('#unsingle-itnary').owlCarousel({
+        loop: false,
+        margin: 16,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
     $('#zoom-img-carousel').owlCarousel({
         loop: false,
         margin: 16,
